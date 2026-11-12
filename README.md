@@ -135,7 +135,3 @@ docs/             architecture and deployment
 - **Fresh documents are slow to read on the free model tier,** about 1–4 minutes each. The samples are cached.
 - **Two of the source checks are simulated,** the GST registry and the bank account check, and PAN, MCA and Udyam are not checked at the source. Production would call paid providers.
 - **Not built:** e-mail reminders, periodic re-verification, employee conflict-of-interest matching, and a direct push into an ERP system. The vendor master record is exported instead.
-
-## How it was built
-
-Built in a week with AI coding tools. Claude Code wrote the implementation. Two other AI agents reviewed the design, then the code file by file, and tested the live site as outside users. Each problem they found was fixed with a regression test, and those tests are part of the suite above.
