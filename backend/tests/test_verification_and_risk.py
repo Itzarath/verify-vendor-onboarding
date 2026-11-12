@@ -200,7 +200,8 @@ def test_bank_lookups_are_recorded_once_per_request(app_client):
     from app.models import Verification
     with session_scope() as db:
         rows = [(v.identifier_type, v.method, v.result) for v in db.scalars(
-            select(Verification).where(Verification.request_id == req, Verification.identifier_type != "GSTIN"))]
+            select(Verification).where(Verification.request_id == req, Verification.identifier_type != "GSTIN")
+            .order_by(Verification.id))]
     assert rows == [("IFSC", "demo_bank_directory", "found"), ("BANK_ACCOUNT", "penny_drop_sandbox", "valid")]
     rv = as_user(app_client, b.reviewer_id)
     c = case(rv, req)

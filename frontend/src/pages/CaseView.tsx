@@ -7,6 +7,7 @@ import RunView, { RunStatus } from "../components/RunView";
 import { Button, Card, CHECK_STATUS_LABEL, CheckIcon, Empty, ErrorNote, inputCls, LoadFailed, OwnerBadge, Provenance, Spinner, Stamp, StateChip } from "../components/ui";
 import { api, opId } from "../lib/api";
 import { dateTime, humanize, layoutLabel, mask, secs, timeAgo } from "../lib/format";
+import { shouldRefresh } from "../lib/activity";
 import { useResource } from "../lib/hooks";
 
 const GROUPS: [string, string][] = [
@@ -30,11 +31,13 @@ function CasePage({ id }: { id: string }) {
   const state = data?.request.state;
   useEffect(() => setPoll(state === "PROCESSING" ? 2500 : null), [state]);
   useEffect(() => { if (data) { setRunId(data.runs[0]?.id ?? null); setNewer(null); } }, [data?.request.id, data?.request.version]); // eslint-disable-line
-  // Watch for changes made elsewhere WITHOUT replacing what the reviewer is looking at.
+  // Watch for changes made elsewhere WITHOUT replacing what the reviewer is looking at. Only the version is fetched
+  // (a few bytes, not the whole case), and only while someone is looking at the page.
   useEffect(() => {
     if (!data || state === "PROCESSING") return;
     const t = setInterval(async () => {
-      try { const d = await api(`/review/requests/${id}`); if (d.request.version !== data.request.version) setNewer(d.request.version); } catch { /* ignore */ }
+      if (!shouldRefresh()) return;
+      try { const d = await api(`/review/requests/${id}/version`); if (d.version !== data.request.version) setNewer(d.version); } catch { /* ignore */ }
     }, 5000);
     return () => clearInterval(t);
   }, [data, id, state]);

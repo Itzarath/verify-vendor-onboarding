@@ -4,6 +4,7 @@ import logging
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
+from fastapi.middleware.gzip import GZipMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.exc import DBAPIError
@@ -64,11 +65,13 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="Vendor onboarding (PS-2)", lifespan=lifespan)
 app.include_router(api)
+# Case pages and the app bundle compress about tenfold; the free hosting plan has a small monthly data allowance.
+app.add_middleware(GZipMiddleware, minimum_size=1000)
 
 
 @app.middleware("http")
 async def demo_access_gate(request: Request, call_next):
-    """Every API call needs the shared demo access code, except the health check and entering the code itself.
+    """When a shared access code is set, every API call needs it, except the health check and entering the code.
     The page shell (HTML/JS) is public; it only shows the code prompt until the code is entered."""
     from .api import access
 

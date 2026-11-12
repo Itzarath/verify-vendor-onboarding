@@ -348,6 +348,16 @@ def case(request_id: int, user: User = Depends(require_reviewer), db: Session = 
     return views.case_detail(db, user, request_id)
 
 
+@api.get("/review/requests/{request_id}/version")
+def case_version(request_id: int, user: User = Depends(require_reviewer), db: Session = Depends(get_db)):
+    """Only the case's version, for an open case page watching for changes made elsewhere: a few bytes instead of
+    the whole case every few seconds."""
+    req = db.get(Request, request_id)
+    if req is None or req.buyer_id != user.buyer_id:
+        raise ApiError(404, "not_found", "Request not found")
+    return {"version": req.version}
+
+
 @api.post("/review/requests/{request_id}/{action}")
 def review_action(request_id: int, action: str, body: dict, user: User = Depends(require_reviewer), db: Session = Depends(get_db)):
     fn = {"approve": commands.approve, "reject": commands.reject, "resolve": commands.resolve_review,

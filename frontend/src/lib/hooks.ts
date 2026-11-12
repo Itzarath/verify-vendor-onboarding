@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { shouldRefresh } from "./activity";
 import { api } from "./api";
 
-/** Fetch a resource; optionally keep polling while `pollMs` is set.
+/** Fetch a resource; optionally keep polling while `pollMs` is set, but only while someone is looking (lib/activity).
+ * A poll of 3 s or faster means an evaluation is running, so it also continues while the page sits untouched.
  *
  * Only a response for the CURRENT path is ever shown: when the path changes (e.g. browser history jumps from one
  * case to another), a late reply for the previous path is dropped and the old data is cleared, so a page never
@@ -33,7 +35,8 @@ export function useResource<T = any>(path: string | null, pollMs?: number | null
 
   useEffect(() => {
     if (!pollMs) return;
-    const t = setInterval(load, pollMs);
+    const working = pollMs <= 3000;
+    const t = setInterval(() => { if (shouldRefresh(working)) load(); }, pollMs);
     return () => clearInterval(t);
   }, [load, pollMs]);
 

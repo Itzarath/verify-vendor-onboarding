@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { AlertTriangle, Check, FileSearch, GitCompareArrows, Inbox, ListChecks, Scale, Send, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { shouldRefresh } from "../lib/activity";
 import { api } from "../lib/api";
 import { clock, secs } from "../lib/format";
 import { useNow } from "../lib/hooks";
@@ -44,7 +45,10 @@ export default function RunView({ runId, onFinished, compact }: { runId: number;
     setEvents([]); setRun(null); setError(null); lastId.current = 0; finishedFor.current = null;
     let stop = false;
     let timer: any;
+    let working = true; // until the first reply says otherwise
     const tick = async () => {
+      // Only while someone is looking (lib/activity); a running evaluation keeps refreshing on an untouched page.
+      if (!shouldRefresh(working)) { timer = setTimeout(tick, 2000); return; }
       try {
         const d = await api(`/runs/${runId}/events?after=${lastId.current}`);
         if (stop) return;
@@ -55,6 +59,7 @@ export default function RunView({ runId, onFinished, compact }: { runId: number;
         setRun(d.run);
         setError(null); // the connection is back: an earlier polling error no longer applies
         const active = d.run.status === "QUEUED" || d.run.status === "RUNNING";
+        working = active;
         if (!active && finishedFor.current !== runId) {
           finishedFor.current = runId;
           onFinished?.();

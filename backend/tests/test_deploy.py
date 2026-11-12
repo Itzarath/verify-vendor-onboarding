@@ -278,3 +278,20 @@ def test_wrong_guesses_from_others_do_not_lock_out_an_evaluator_with_the_code(ga
         access.record_failure(f"client-{i}")
     access.too_many_failures("x")
     assert len(access._failures) <= access.MAX_TRACKED_CLIENTS + 1
+
+
+def test_an_open_case_page_checks_only_the_version_and_responses_are_compressed(app_client):
+    # An open case page asks every few seconds whether the case changed. It gets only the version, not the whole case,
+    # and large responses are compressed: the free hosting plan has a small monthly data allowance.
+    from .test_api_flow import run_worker_until_idle, staff, submit_sample, vendor
+
+    v = vendor(app_client, "Version Watch Services Private Limited")
+    r, _ = submit_sample(v, "trade_name_unsupported")
+    req = r.json()["request_id"]
+    run_worker_until_idle()
+    rv = staff(app_client)
+    full = rv.get(f"/api/review/requests/{req}", headers={"Accept-Encoding": "gzip"})
+    assert full.headers.get("content-encoding") == "gzip"
+    assert rv.get(f"/api/review/requests/{req}/version").json() == {"version": full.json()["request"]["version"]}
+    assert staff(app_client, buyer="Kestrel").get(f"/api/review/requests/{req}/version").status_code == 404
+    assert v.get(f"/api/review/requests/{req}/version").status_code == 403
