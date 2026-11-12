@@ -1,0 +1,664 @@
+{
+  "happy_nimbus": {
+    "title": "Happy path \u2014 Nimbus Ledger Solutions Pvt Ltd",
+    "vendor": "nimbus",
+    "form": {
+      "business": {
+        "legal_name": "Nimbus Ledger Solutions Private Limited",
+        "trade_name": null,
+        "entity_type": "private_limited",
+        "registration_number": "U72200KA2019PTC128734",
+        "incorporation_date": "14/03/2019",
+        "registered_address": {
+          "line1": "4th Floor, 18 Residency Road",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "pincode": "560025"
+        }
+      },
+      "service": {
+        "category": "IT services & software",
+        "description": "IT services & software for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Ananya Rao",
+        "role": "Finance Manager",
+        "email": "ananya.rao@nimbusledger.example",
+        "phone": "+91 80 4000 1122",
+        "signatory_name": "Vikram Shetty",
+        "signatory_designation": "Director"
+      },
+      "tax": {
+        "pan": "AAHCN7316M",
+        "gst_registered": "yes",
+        "gstin": "29AAHCN7316M1ZW",
+        "msme_registered": "yes",
+        "udyam_number": "UDYAM-KA-03-0045127"
+      },
+      "bank": {
+        "account_holder": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+        "account_number": "000412300045821",
+        "ifsc": "DECB0000412",
+        "bank_name": "Deccan Commercial Bank",
+        "branch": "Residency Road, Bengaluru"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "nimbus_pan.pdf",
+      "gst_certificate": "nimbus_gst.pdf",
+      "incorporation_certificate": "nimbus_incorporation.pdf",
+      "bank_proof": "nimbus_bank_letter.pdf",
+      "msme_certificate": "nimbus_udyam.pdf"
+    },
+    "expect": "All checks pass. Meridian (automatic approval of clean applications): APPROVED automatically. Kestrel (manual): READY_FOR_DECISION \u2192 reviewer approves"
+  },
+  "trade_name_supported": {
+    "title": "Edge 1 \u2014 Bank account in trade name (GST certificate supports it)",
+    "vendor": "tejas",
+    "form": {
+      "business": {
+        "legal_name": "Tejas Facility Services Private Limited",
+        "trade_name": "Tejas Cleanpro",
+        "entity_type": "private_limited",
+        "registration_number": "U81210MH2017PTC294518",
+        "incorporation_date": "09/06/2017",
+        "registered_address": {
+          "line1": "Unit 7, Lakeview Industrial Estate, Baner",
+          "city": "Pune",
+          "state": "Maharashtra",
+          "pincode": "411045"
+        }
+      },
+      "service": {
+        "category": "Facility management",
+        "description": "Facility management for buyer sites and teams",
+        "onsite_work": "yes",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Meera Kulkarni",
+        "role": "Operations Head",
+        "email": "meera@tejascleanpro.example",
+        "phone": "+91 20 6600 4411",
+        "signatory_name": "Prakash Joshi",
+        "signatory_designation": "Managing Director"
+      },
+      "tax": {
+        "pan": "AACCT5520R",
+        "gst_registered": "yes",
+        "gstin": "27AACCT5520R1ZV",
+        "msme_registered": "no",
+        "udyam_number": null
+      },
+      "bank": {
+        "account_holder": "TEJAS CLEANPRO",
+        "account_number": "50200011223344",
+        "ifsc": "KONB0001187",
+        "bank_name": "Konkan Union Bank",
+        "branch": "Baner, Pune"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "tejas_pan.pdf",
+      "gst_certificate": "tejas_gst.pdf",
+      "incorporation_certificate": "tejas_incorporation.pdf",
+      "bank_proof": "tejas_cheque.pdf"
+    },
+    "expect": "Needs reviewer judgement with GST trade-name evidence shown \u2192 reviewer accepts \u2192 READY"
+  },
+  "trade_name_unsupported": {
+    "title": "Edge 1b \u2014 Bank account in trade name, no supporting evidence",
+    "vendor": "tejas",
+    "form": {
+      "business": {
+        "legal_name": "Tejas Facility Services Private Limited",
+        "trade_name": null,
+        "entity_type": "private_limited",
+        "registration_number": "U81210MH2017PTC294518",
+        "incorporation_date": "09/06/2017",
+        "registered_address": {
+          "line1": "Unit 7, Lakeview Industrial Estate, Baner",
+          "city": "Pune",
+          "state": "Maharashtra",
+          "pincode": "411045"
+        }
+      },
+      "service": {
+        "category": "Facility management",
+        "description": "Facility management for buyer sites and teams",
+        "onsite_work": "yes",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Meera Kulkarni",
+        "role": "Operations Head",
+        "email": "meera@tejascleanpro.example",
+        "phone": "+91 20 6600 4411",
+        "signatory_name": "Prakash Joshi",
+        "signatory_designation": "Managing Director"
+      },
+      "tax": {
+        "pan": "AACCT5520R",
+        "gst_registered": "yes",
+        "gstin": "27AACCT5520R1ZV",
+        "msme_registered": "no",
+        "udyam_number": null
+      },
+      "bank": {
+        "account_holder": "TEJAS CLEANPRO",
+        "account_number": "50200011223344",
+        "ifsc": "KONB0001187",
+        "bank_name": "Konkan Union Bank",
+        "branch": "Baner, Pune"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "tejas_pan.pdf",
+      "gst_certificate": "tejas_gst_no_trade_name.pdf",
+      "incorporation_certificate": "tejas_incorporation.pdf",
+      "bank_proof": "tejas_cheque.pdf"
+    },
+    "expect": "ACTION_REQUIRED: vendor asked to evidence the account-holder name"
+  },
+  "director_pan": {
+    "title": "Edge 2 \u2014 Director's personal PAN instead of company PAN",
+    "vendor": "saffron",
+    "form": {
+      "business": {
+        "legal_name": "Saffron Route Logistics Private Limited",
+        "trade_name": null,
+        "entity_type": "private_limited",
+        "registration_number": "U60200GJ2020PTC115263",
+        "incorporation_date": "21/09/2020",
+        "registered_address": {
+          "line1": "Plot 41, Sanand GIDC Phase II",
+          "city": "Ahmedabad",
+          "state": "Gujarat",
+          "pincode": "382110"
+        }
+      },
+      "service": {
+        "category": "Logistics & transport",
+        "description": "Logistics & transport for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Rohan Mehta",
+        "role": "Director",
+        "email": "rohan@saffronroute.example",
+        "phone": "+91 79 2900 7788",
+        "signatory_name": "Rohan Mehta",
+        "signatory_designation": "Director"
+      },
+      "tax": {
+        "pan": "BQRPM4471K",
+        "gst_registered": "yes",
+        "gstin": "24AAPCS2291H1Z4",
+        "msme_registered": "no",
+        "udyam_number": null
+      },
+      "bank": {
+        "account_holder": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED",
+        "account_number": "1204005566778",
+        "ifsc": "SBMB0000318",
+        "bank_name": "Sabarmati Mercantile Bank",
+        "branch": "Sanand, Ahmedabad"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "saffron_director_pan.pdf",
+      "gst_certificate": "saffron_gst.pdf",
+      "incorporation_certificate": "saffron_incorporation.pdf",
+      "bank_proof": "saffron_bank_letter.pdf"
+    },
+    "expect": "ACTION_REQUIRED: provide company PAN (system points to PAN on incorporation certificate and GSTIN)"
+  },
+  "bank_change_rev1": {
+    "title": "Edge 3 (rev 1) \u2014 Indigo Pixel Studios LLP, LLP certificate missing",
+    "vendor": "indigo",
+    "form": {
+      "business": {
+        "legal_name": "Indigo Pixel Studios LLP",
+        "trade_name": null,
+        "entity_type": "llp",
+        "registration_number": "AAQ-9921",
+        "incorporation_date": "03/02/2021",
+        "registered_address": {
+          "line1": "2nd Floor, Kamala Mills Compound, Lower Parel",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "pincode": "400013"
+        }
+      },
+      "service": {
+        "category": "Marketing & advertising",
+        "description": "Marketing & advertising for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Kabir Fernandes",
+        "role": "Partner",
+        "email": "kabir@indigopixel.example",
+        "phone": "+91 22 6100 3030",
+        "signatory_name": "Kabir Fernandes",
+        "signatory_designation": "Designated Partner"
+      },
+      "tax": {
+        "pan": "AAKFI6604B",
+        "gst_registered": "yes",
+        "gstin": "27AAKFI6604B1ZM",
+        "msme_registered": "no",
+        "udyam_number": null
+      },
+      "bank": {
+        "account_holder": "INDIGO PIXEL STUDIOS LLP",
+        "account_number": "091100078214821",
+        "ifsc": "SAHB0000231",
+        "bank_name": "Sahyadri Commercial Bank",
+        "branch": "Lower Parel, Mumbai"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "indigo_pan.pdf",
+      "gst_certificate": "indigo_gst.pdf",
+      "bank_proof": "indigo_cheque_old.pdf"
+    },
+    "expect": "ACTION_REQUIRED: upload certificate of incorporation"
+  },
+  "bank_change_rev2": {
+    "title": "Edge 3 (rev 2) \u2014 certificate supplied AND bank account changed",
+    "vendor": "indigo",
+    "form": {
+      "business": {
+        "legal_name": "Indigo Pixel Studios LLP",
+        "trade_name": null,
+        "entity_type": "llp",
+        "registration_number": "AAQ-9921",
+        "incorporation_date": "03/02/2021",
+        "registered_address": {
+          "line1": "2nd Floor, Kamala Mills Compound, Lower Parel",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "pincode": "400013"
+        }
+      },
+      "service": {
+        "category": "Marketing & advertising",
+        "description": "Marketing & advertising for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Kabir Fernandes",
+        "role": "Partner",
+        "email": "kabir@indigopixel.example",
+        "phone": "+91 22 6100 3030",
+        "signatory_name": "Kabir Fernandes",
+        "signatory_designation": "Designated Partner"
+      },
+      "tax": {
+        "pan": "AAKFI6604B",
+        "gst_registered": "yes",
+        "gstin": "27AAKFI6604B1ZM",
+        "msme_registered": "no",
+        "udyam_number": null
+      },
+      "bank": {
+        "account_holder": "INDIGO PIXEL STUDIOS LLP",
+        "account_number": "337700019027390",
+        "ifsc": "KONB0000562",
+        "bank_name": "Konkan Union Bank",
+        "branch": "Worli, Mumbai"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "indigo_pan.pdf",
+      "gst_certificate": "indigo_gst.pdf",
+      "incorporation_certificate": "indigo_incorporation.pdf",
+      "bank_proof": "indigo_cheque_new.pdf"
+    },
+    "expect": "Certificate satisfied; bank change detected \u2192 finance review; stale approval blocked"
+  },
+  "identity_conflict": {
+    "title": "Edge 4 \u2014 GSTIN belongs to a different legal entity",
+    "vendor": "harbourline",
+    "form": {
+      "business": {
+        "legal_name": "Harbourline Analytics Private Limited",
+        "trade_name": null,
+        "entity_type": "private_limited",
+        "registration_number": "U72900TG2018PTC127781",
+        "incorporation_date": "17/07/2018",
+        "registered_address": {
+          "line1": "Plot 12, Cyber Towers Road, Madhapur",
+          "city": "Hyderabad",
+          "state": "Telangana",
+          "pincode": "500081"
+        }
+      },
+      "service": {
+        "category": "IT services & software",
+        "description": "IT services & software for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Sana Qureshi",
+        "role": "Accounts Lead",
+        "email": "sana@harbourline.example",
+        "phone": "+91 40 4455 9900",
+        "signatory_name": "Arjun Reddy",
+        "signatory_designation": "Director"
+      },
+      "tax": {
+        "pan": "AADCH3349P",
+        "gst_registered": "yes",
+        "gstin": "36AAKCS8812D1Z9",
+        "msme_registered": "no",
+        "udyam_number": null
+      },
+      "bank": {
+        "account_holder": "HARBOURLINE ANALYTICS PRIVATE LIMITED",
+        "account_number": "000735100082214",
+        "ifsc": "DECB0000735",
+        "bank_name": "Deccan Commercial Bank",
+        "branch": "Madhapur, Hyderabad"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "harbourline_pan.pdf",
+      "gst_certificate": "harbourline_gst.pdf",
+      "incorporation_certificate": "harbourline_incorporation.pdf",
+      "bank_proof": "harbourline_bank_letter.pdf"
+    },
+    "expect": "ACTION_REQUIRED clarification \u2192 unresolved \u2192 reviewer rejects with reason"
+  },
+  "scanned_llp_buyer_b": {
+    "title": "Scanned + mixed documents, MSME claimed without certificate (Buyer A blocks, Buyer B doesn't)",
+    "vendor": "kaveri",
+    "form": {
+      "business": {
+        "legal_name": "Kaveri Cloudworks LLP",
+        "trade_name": null,
+        "entity_type": "llp",
+        "registration_number": "AAK-4417",
+        "incorporation_date": "28/11/2019",
+        "registered_address": {
+          "line1": "No. 88, Rajiv Gandhi Salai, Taramani",
+          "city": "Chennai",
+          "state": "Tamil Nadu",
+          "pincode": "600113"
+        }
+      },
+      "service": {
+        "category": "IT services & software",
+        "description": "IT services & software for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Divya Natarajan",
+        "role": "Partner",
+        "email": "divya@kavericloud.example",
+        "phone": "+91 44 4800 2200",
+        "signatory_name": "Divya Natarajan",
+        "signatory_designation": "Designated Partner"
+      },
+      "tax": {
+        "pan": "AAPFK9035C",
+        "gst_registered": "yes",
+        "gstin": "33AAPFK9035C1ZD",
+        "msme_registered": "yes",
+        "udyam_number": "UDYAM-TN-02-0078812"
+      },
+      "bank": {
+        "account_holder": "KAVERI CLOUDWORKS LLP",
+        "account_number": "004420019935107",
+        "ifsc": "CTBK0000442",
+        "bank_name": "Coromandel Trust Bank",
+        "branch": "Taramani, Chennai"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "kaveri_pan_scanned.pdf",
+      "gst_certificate": "kaveri_gst.pdf",
+      "incorporation_certificate": "kaveri_incorporation.pdf",
+      "bank_proof": "kaveri_bank_mixed.pdf"
+    },
+    "expect": "Buyer A: ACTION_REQUIRED (MSME proof). Buyer B: not blocked by MSME"
+  },
+  "unreadable_account": {
+    "title": "Scanned cheque with obscured account digits",
+    "vendor": "kaveri",
+    "form": {
+      "business": {
+        "legal_name": "Kaveri Cloudworks LLP",
+        "trade_name": null,
+        "entity_type": "llp",
+        "registration_number": "AAK-4417",
+        "incorporation_date": "28/11/2019",
+        "registered_address": {
+          "line1": "No. 88, Rajiv Gandhi Salai, Taramani",
+          "city": "Chennai",
+          "state": "Tamil Nadu",
+          "pincode": "600113"
+        }
+      },
+      "service": {
+        "category": "IT services & software",
+        "description": "IT services & software for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Divya Natarajan",
+        "role": "Partner",
+        "email": "divya@kavericloud.example",
+        "phone": "+91 44 4800 2200",
+        "signatory_name": "Divya Natarajan",
+        "signatory_designation": "Designated Partner"
+      },
+      "tax": {
+        "pan": "AAPFK9035C",
+        "gst_registered": "yes",
+        "gstin": "33AAPFK9035C1ZD",
+        "msme_registered": "no",
+        "udyam_number": null
+      },
+      "bank": {
+        "account_holder": "KAVERI CLOUDWORKS LLP",
+        "account_number": "004420019935107",
+        "ifsc": "CTBK0000442",
+        "bank_name": "Coromandel Trust Bank",
+        "branch": "Taramani, Chennai"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "accepted",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "kaveri_pan.pdf",
+      "gst_certificate": "kaveri_gst.pdf",
+      "incorporation_certificate": "kaveri_incorporation.pdf",
+      "bank_proof": "kaveri_cheque_unreadable_scan.pdf"
+    },
+    "expect": "Bank proof account number unreadable \u2192 unable to confirm \u2192 vendor asked for a clearer copy"
+  },
+  "conduct_declined": {
+    "title": "Explicit refusal of supplier code of conduct",
+    "vendor": "nimbus",
+    "form": {
+      "business": {
+        "legal_name": "Nimbus Ledger Solutions Private Limited",
+        "trade_name": null,
+        "entity_type": "private_limited",
+        "registration_number": "U72200KA2019PTC128734",
+        "incorporation_date": "14/03/2019",
+        "registered_address": {
+          "line1": "4th Floor, 18 Residency Road",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "pincode": "560025"
+        }
+      },
+      "service": {
+        "category": "IT services & software",
+        "description": "IT services & software for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Ananya Rao",
+        "role": "Finance Manager",
+        "email": "ananya.rao@nimbusledger.example",
+        "phone": "+91 80 4000 1122",
+        "signatory_name": "Vikram Shetty",
+        "signatory_designation": "Director"
+      },
+      "tax": {
+        "pan": "AAHCN7316M",
+        "gst_registered": "yes",
+        "gstin": "29AAHCN7316M1ZW",
+        "msme_registered": "yes",
+        "udyam_number": "UDYAM-KA-03-0045127"
+      },
+      "bank": {
+        "account_holder": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+        "account_number": "000412300045821",
+        "ifsc": "DECB0000412",
+        "bank_name": "Deccan Commercial Bank",
+        "branch": "Residency Road, Bengaluru"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": "declined",
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "nimbus_pan.pdf",
+      "gst_certificate": "nimbus_gst.pdf",
+      "incorporation_certificate": "nimbus_incorporation.pdf",
+      "bank_proof": "nimbus_bank_letter.pdf",
+      "msme_certificate": "nimbus_udyam.pdf"
+    },
+    "expect": "REJECTED automatically by policy rule"
+  },
+  "conduct_unanswered": {
+    "title": "Code of conduct left unanswered",
+    "vendor": "nimbus",
+    "form": {
+      "business": {
+        "legal_name": "Nimbus Ledger Solutions Private Limited",
+        "trade_name": null,
+        "entity_type": "private_limited",
+        "registration_number": "U72200KA2019PTC128734",
+        "incorporation_date": "14/03/2019",
+        "registered_address": {
+          "line1": "4th Floor, 18 Residency Road",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "pincode": "560025"
+        }
+      },
+      "service": {
+        "category": "IT services & software",
+        "description": "IT services & software for buyer sites and teams",
+        "onsite_work": "no",
+        "buyer_contact": "Procurement \u2014 Services"
+      },
+      "contact": {
+        "name": "Ananya Rao",
+        "role": "Finance Manager",
+        "email": "ananya.rao@nimbusledger.example",
+        "phone": "+91 80 4000 1122",
+        "signatory_name": "Vikram Shetty",
+        "signatory_designation": "Director"
+      },
+      "tax": {
+        "pan": "AAHCN7316M",
+        "gst_registered": "yes",
+        "gstin": "29AAHCN7316M1ZW",
+        "msme_registered": "yes",
+        "udyam_number": "UDYAM-KA-03-0045127"
+      },
+      "bank": {
+        "account_holder": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+        "account_number": "000412300045821",
+        "ifsc": "DECB0000412",
+        "bank_name": "Deccan Commercial Bank",
+        "branch": "Residency Road, Bengaluru"
+      },
+      "declarations": {
+        "information_correct": true,
+        "conduct_acceptance": null,
+        "conflict_of_interest": "none",
+        "conflict_details": null
+      }
+    },
+    "documents": {
+      "pan_card": "nimbus_pan.pdf",
+      "gst_certificate": "nimbus_gst.pdf",
+      "incorporation_certificate": "nimbus_incorporation.pdf",
+      "bank_proof": "nimbus_bank_letter.pdf",
+      "msme_certificate": "nimbus_udyam.pdf"
+    },
+    "expect": "ACTION_REQUIRED: answer the code-of-conduct question (not a rejection)"
+  }
+}

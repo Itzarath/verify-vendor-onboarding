@@ -1,0 +1,18 @@
+# Only what the Dockerfile copies is needed; keep secrets, local tooling and review evidence out of the build.
+.git
+.env
+.env.*
+.venv
+.cache
+.pgdata
+.tools
+tmp
+**/__pycache__
+**/*.pyc
+**/node_modules
+frontend/dist
+review
+handoffs
+docs
+backend/tests
+backend/scripts

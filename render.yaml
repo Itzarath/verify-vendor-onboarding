@@ -1,0 +1,40 @@
+# Render Blueprint: one Docker web service in Singapore. The database is Neon (separate sign-up); see docs/DEPLOYMENT.md.
+# Values marked "sync: false" are entered in the Render dashboard and are never stored in this repository.
+services:
+  - type: web
+    name: verify-vendor-onboarding
+    runtime: docker
+    region: singapore
+    plan: free  # sleeps after 15 idle minutes; an outside 5-minute health ping keeps it awake
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: prod
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DEMO_ACCESS_CODE
+        sync: false
+      - key: LLM_MODEL
+        value: gemini-3.8-flash
+      - key: LLM_TIMEOUT_S
+        value: "240"
+      - key: LLM_API_KEY
+        sync: false
+      - key: LLM_API_KEY_2
+        sync: false
+      - key: LLM_API_KEY_3
+        sync: false
+      # a 512 MB instance: one PDF child at a time, each capped below what the instance has
+      - key: PDF_MAX_CHILDREN
+        value: "1"
+      - key: PDF_MEMORY_MB
+        value: "450"
+      - key: DB_POOL_SIZE
+        value: "3"
+      # the free instance has a small CPU share: give each PDF step more wall-clock time ("prepare" gets 3x)
+      - key: PDF_TIMEOUT_S
+        value: "45"

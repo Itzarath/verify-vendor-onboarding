@@ -1,0 +1,64 @@
+{
+  "policy_key": "kestrel-services-onboarding",
+  "version": 1,
+  "buyer_name": "Kestrel Health Systems (fictional buyer)",
+  "label": "Service vendor onboarding — demo policy v1 (MSME proof optional, registry check by a person)",
+  "is_test_policy": true,
+  "scope": {
+    "supported_entity_types": ["private_limited", "llp"],
+    "gst_unregistered": "scope_review"
+  },
+  "required_fields": [
+    {"field": "business.legal_name"},
+    {"field": "business.entity_type"},
+    {"field": "business.registration_number"},
+    {"field": "business.registered_address.line1"},
+    {"field": "business.registered_address.city"},
+    {"field": "business.registered_address.state"},
+    {"field": "business.registered_address.pincode"},
+    {"field": "service.category"},
+    {"field": "service.onsite_work"},
+    {"field": "contact.name"},
+    {"field": "contact.email"},
+    {"field": "contact.signatory_name"},
+    {"field": "tax.pan"},
+    {"field": "tax.gst_registered"},
+    {"field": "tax.gstin", "when": {"field": "tax.gst_registered", "op": "eq", "value": "yes"}},
+    {"field": "tax.msme_registered"},
+    {"field": "bank.account_holder"},
+    {"field": "bank.account_number"},
+    {"field": "bank.ifsc"},
+    {"field": "bank.bank_name"},
+    {"field": "declarations.information_correct"}
+  ],
+  "documents": [
+    {"id": "pan_evidence", "document_type": "pan_card", "level": "required",
+     "reason": "Confirms the business PAN used for tax deduction and payments"},
+    {"id": "registration_evidence", "document_type": "incorporation_certificate", "level": "required",
+     "reason": "Confirms the legal entity and its CIN/LLPIN"},
+    {"id": "gst_evidence", "document_type": "gst_certificate", "level": "required",
+     "when": {"field": "tax.gst_registered", "op": "eq", "value": "yes"},
+     "reason": "Required when the vendor declares GST registration"},
+    {"id": "bank_evidence", "document_type": "bank_proof", "level": "required",
+     "reason": "Payments will only be made to an account proven to belong to the vendor"},
+    {"id": "msme_evidence", "document_type": "msme_certificate", "level": "optional",
+     "when": {"field": "tax.msme_registered", "op": "eq", "value": "yes"},
+     "reason": "Helpful for payment terms, but this buyer does not block onboarding on it"},
+    {"id": "supporting_evidence", "document_type": "supporting_document", "level": "optional",
+     "reason": "Optional context such as a trade-name or bank letter"}
+  ],
+  "declarations": {
+    "conduct_declined": "auto_reject",
+    "conduct_unanswered": "request_information",
+    "conflict_disclosed": "review"
+  },
+  "verification": [
+    {"id": "gst_registry_check", "identifier": "GSTIN", "required": true,
+     "accepted_methods": ["manual_registry"]}
+  ],
+  "reviews": {
+    "bank_change_requires_finance_review": true,
+    "duplicate_bank_account": "review",
+    "gst_state_differs_from_address": "review"
+  }
+}

@@ -1,0 +1,573 @@
+{
+  "totals": {
+    "fields": 49,
+    "correct": 44,
+    "abstained_ok": 5,
+    "fabricated": 0,
+    "missed": 0,
+    "wrong": 0
+  },
+  "rows": [
+    {
+      "file": "nimbus_bank_letter.pdf",
+      "layout": "digital",
+      "status": "complete",
+      "seconds": 158.3,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash",
+          "outcome": "timeout",
+          "latency_ms": 120700,
+          "detail": "provider did not respond in time"
+        },
+        {
+          "target": "gemini:gemini-3.8-flash",
+          "outcome": "ok",
+          "latency_ms": 33486,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "account_holder": {
+          "expected": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+          "got": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "account_number": {
+          "expected": "000412300045821",
+          "got": "000412300045821",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "ifsc": {
+          "expected": "DECB0000412",
+          "got": "DECB0000412",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "bank_name": {
+          "expected": "Deccan Commercial Bank",
+          "got": "Deccan Commercial Bank",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "branch": {
+          "expected": "Residency Road, Bengaluru",
+          "got": "Residency Road, Bengaluru",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "proof_kind": {
+          "expected": "bank_letter",
+          "got": "bank_letter",
+          "status": "found",
+          "provenance": "inferred",
+          "verdict": "correct"
+        },
+        "document_date": {
+          "expected": "02/11/2026",
+          "got": "02/11/2026",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        }
+      },
+      "detected_type": "bank_proof",
+      "type_ok": true,
+      "quality_issues": [
+        "Document is marked as a synthetic specimen generated for software testing with no signature."
+      ]
+    },
+    {
+      "file": "nimbus_gst.pdf",
+      "layout": "digital",
+      "status": "complete",
+      "seconds": 55.4,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash",
+          "outcome": "ok",
+          "latency_ms": 55274,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "gstin": {
+          "expected": "29AAHCN7316M1ZW",
+          "got": "29AAHCN7316M1ZW",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "legal_name": {
+          "expected": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+          "got": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "trade_name": {
+          "expected": null,
+          "got": null,
+          "status": "not_found",
+          "provenance": "none",
+          "verdict": "abstained_ok"
+        },
+        "constitution": {
+          "expected": "Private Limited Company",
+          "got": "Private Limited Company",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "principal_address": {
+          "expected": "4th Floor, 18 Residency Road, Bengaluru, Karnataka - 560025",
+          "got": "4th Floor, 18 Residency Road, Bengaluru, Karnataka - 560025",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "address_state": {
+          "expected": "Karnataka",
+          "got": "Karnataka",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "date_of_liability": {
+          "expected": "01/07/2021",
+          "got": "01/07/2021",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "registration_type": {
+          "expected": "Regular",
+          "got": "Regular",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        }
+      },
+      "detected_type": "gst_certificate",
+      "type_ok": true,
+      "quality_issues": [
+        "Document is marked as a synthetic test specimen"
+      ]
+    },
+    {
+      "file": "tejas_cheque.pdf",
+      "measured_at": "2026-11-07T15:26:06+00:00",
+      "layout": "digital",
+      "status": "complete",
+      "seconds": 117.9,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash (key 2)",
+          "outcome": "ok",
+          "latency_ms": 117721,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "account_holder": {
+          "expected": "TEJAS CLEANPRO",
+          "got": "TEJAS CLEANPRO",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "account_number": {
+          "expected": "50200011223344",
+          "got": "50200011223344",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "ifsc": {
+          "expected": "KONB0001187",
+          "got": "KONB0001187",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "bank_name": {
+          "expected": "Konkan Union Bank",
+          "got": "Konkan Union Bank",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "branch": {
+          "expected": "Baner, Pune",
+          "got": "Baner, Pune Branch",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "proof_kind": {
+          "expected": "cancelled_cheque",
+          "got": "cancelled_cheque",
+          "status": "found",
+          "provenance": "inferred",
+          "verdict": "correct"
+        },
+        "document_date": {
+          "expected": null,
+          "got": null,
+          "status": "not_found",
+          "provenance": "none",
+          "verdict": "abstained_ok"
+        }
+      },
+      "detected_type": "bank_proof",
+      "type_ok": true,
+      "quality_issues": [
+        "Document is marked as a synthetic specimen generated for software testing."
+      ]
+    },
+    {
+      "file": "saffron_director_pan.pdf",
+      "layout": "digital",
+      "status": "complete",
+      "seconds": 181.5,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash",
+          "outcome": "timeout",
+          "latency_ms": 120008,
+          "detail": "provider did not respond in time"
+        },
+        {
+          "target": "gemini:gemini-3.8-flash",
+          "outcome": "ok",
+          "latency_ms": 57371,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "pan": {
+          "expected": "BQRPM4471K",
+          "got": "BQRPM4471K",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "holder_name": {
+          "expected": "ROHAN MEHTA",
+          "got": "ROHAN MEHTA",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "father_name": {
+          "expected": "SURESH MEHTA",
+          "got": "SURESH MEHTA",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "date": {
+          "expected": "12/08/1986",
+          "got": "12/08/1986",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        }
+      },
+      "detected_type": "pan_card",
+      "type_ok": true,
+      "quality_issues": [
+        "Synthetic test specimen watermark present across the page."
+      ]
+    },
+    {
+      "file": "kaveri_pan_scanned.pdf",
+      "measured_at": "2026-11-07T15:24:18+00:00",
+      "layout": "scanned",
+      "status": "complete",
+      "seconds": 9.8,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash (key 1)",
+          "outcome": "quota_exhausted",
+          "latency_ms": 2083,
+          "detail": "the model's daily request quota is used up (free tier: resets at midnight Pacific time); retry later or enable paid usage"
+        },
+        {
+          "target": "gemini:gemini-3.8-flash (key 3)",
+          "outcome": "ok",
+          "latency_ms": 7279,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "pan": {
+          "expected": "AAPFK9035C",
+          "got": "AAPFK9035C",
+          "status": "found",
+          "provenance": "visual_unconfirmed",
+          "verdict": "correct"
+        },
+        "holder_name": {
+          "expected": "KAVERI CLOUDWORKS LLP",
+          "got": "KAVERI CLOUDWORKS LLP",
+          "status": "found",
+          "provenance": "visual_unconfirmed",
+          "verdict": "correct"
+        },
+        "father_name": {
+          "expected": null,
+          "got": null,
+          "status": "not_found",
+          "provenance": "none",
+          "verdict": "abstained_ok"
+        },
+        "date": {
+          "expected": "28/11/2019",
+          "got": "28/11/2019",
+          "status": "found",
+          "provenance": "visual_unconfirmed",
+          "verdict": "correct"
+        }
+      },
+      "detected_type": "pan_card",
+      "type_ok": true,
+      "quality_issues": [
+        "Document is marked as a synthetic specimen generated for software testing"
+      ]
+    },
+    {
+      "file": "kaveri_bank_mixed.pdf",
+      "measured_at": "2026-11-07T15:28:48+00:00",
+      "layout": "mixed",
+      "status": "complete",
+      "seconds": 270.0,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash (key 2)",
+          "outcome": "timeout",
+          "latency_ms": 120547,
+          "detail": "provider did not respond in time"
+        },
+        {
+          "target": "gemini:gemini-3.8-flash (key 2)",
+          "outcome": "timeout",
+          "latency_ms": 120265,
+          "detail": "provider did not respond in time"
+        },
+        {
+          "target": "gemini:gemini-3.8-flash (key 2)",
+          "outcome": "ok",
+          "latency_ms": 14660,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "account_holder": {
+          "expected": "KAVERI CLOUDWORKS LLP",
+          "got": "KAVERI CLOUDWORKS LLP",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "account_number": {
+          "expected": "004420019935107",
+          "got": "004420019935107",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "ifsc": {
+          "expected": "CTBK0000442",
+          "got": "CTBK0000442",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "bank_name": {
+          "expected": "Coromandel Trust Bank",
+          "got": "Coromandel Trust Bank",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "branch": {
+          "expected": "Taramani, Chennai",
+          "got": "Taramani, Chennai",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "proof_kind": {
+          "expected": "bank_letter",
+          "got": "bank_letter",
+          "status": "found",
+          "provenance": "inferred",
+          "verdict": "correct"
+        },
+        "document_date": {
+          "expected": "02/11/2026",
+          "got": "02/11/2026",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        }
+      },
+      "detected_type": "bank_proof",
+      "type_ok": true,
+      "quality_issues": [
+        "Document contains both a bank letter (page 1) and a cancelled cheque (page 2)."
+      ]
+    },
+    {
+      "file": "kaveri_cheque_unreadable_scan.pdf",
+      "measured_at": "2026-11-07T15:29:24+00:00",
+      "layout": "scanned",
+      "status": "partial",
+      "seconds": 197.9,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash (key 3)",
+          "outcome": "timeout",
+          "latency_ms": 120568,
+          "detail": "provider did not respond in time"
+        },
+        {
+          "target": "gemini:gemini-3.8-flash (key 3)",
+          "outcome": "ok",
+          "latency_ms": 73021,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "account_holder": {
+          "expected": "KAVERI CLOUDWORKS LLP",
+          "got": "KAVERI CLOUDWORKS LLP",
+          "status": "found",
+          "provenance": "visual_unconfirmed",
+          "verdict": "correct"
+        },
+        "account_number": {
+          "expected": null,
+          "got": null,
+          "status": "unreadable",
+          "provenance": "none",
+          "verdict": "abstained_ok"
+        },
+        "ifsc": {
+          "expected": "CTBK0000442",
+          "got": "CTBK0000442",
+          "status": "found",
+          "provenance": "visual_unconfirmed",
+          "verdict": "correct"
+        },
+        "bank_name": {
+          "expected": "Coromandel Trust Bank",
+          "got": "Coromandel Trust Bank",
+          "status": "found",
+          "provenance": "visual_unconfirmed",
+          "verdict": "correct"
+        },
+        "branch": {
+          "expected": "Taramani, Chennai",
+          "got": "Taramani, Chennai Branch",
+          "status": "found",
+          "provenance": "visual_unconfirmed",
+          "verdict": "correct"
+        },
+        "proof_kind": {
+          "expected": "cancelled_cheque",
+          "got": "cancelled_cheque",
+          "status": "found",
+          "provenance": "inferred",
+          "verdict": "correct"
+        },
+        "document_date": {
+          "expected": null,
+          "got": null,
+          "status": "not_found",
+          "provenance": "none",
+          "verdict": "abstained_ok"
+        }
+      },
+      "detected_type": "bank_proof",
+      "type_ok": true,
+      "quality_issues": [
+        "Account number is partially covered by a black ink blot / redaction."
+      ]
+    },
+    {
+      "file": "indigo_incorporation.pdf",
+      "measured_at": "2026-11-07T15:29:06+00:00",
+      "layout": "digital",
+      "status": "complete",
+      "seconds": 18.0,
+      "attempts": [
+        {
+          "target": "gemini:gemini-3.8-flash (key 3)",
+          "outcome": "ok",
+          "latency_ms": 17883,
+          "detail": ""
+        }
+      ],
+      "error": null,
+      "fields": {
+        "entity_name": {
+          "expected": "INDIGO PIXEL STUDIOS LLP",
+          "got": "INDIGO PIXEL STUDIOS LLP",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "registration_number": {
+          "expected": "AAQ-9921",
+          "got": "AAQ-9921",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "incorporation_date": {
+          "expected": "3rd day of February 2021",
+          "got": "3rd day of February 2021",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "pan": {
+          "expected": "AAKFI6604B",
+          "got": "AAKFI6604B",
+          "status": "found",
+          "provenance": "text_layer_verified",
+          "verdict": "correct"
+        },
+        "entity_kind": {
+          "expected": "llp",
+          "got": "llp",
+          "status": "found",
+          "provenance": "inferred",
+          "verdict": "correct"
+        }
+      },
+      "detected_type": "incorporation_certificate",
+      "type_ok": true,
+      "quality_issues": [
+        "Synthetic specimen watermarked across the document."
+      ]
+    }
+  ],
+  "scoring_note": "branch: a trailing word Branch, as printed on cheques and letters, is not counted as a difference"
+}

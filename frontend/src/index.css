@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+/* Verify — a verification desk. Ledger paper, fountain-pen ink, and the stamp that marks a decided file.
+   The standard palettes are re-tuned here so every screen shares one system:
+   slate = ink-tinted neutrals, brand = ink blue, emerald = seal green (verified), amber = saffron (pending),
+   red = stamp red (rejected / fraud signal), sky = teal (processing), violet = reviewer. */
+@theme {
+  --font-sans: "Mukta", ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+  --font-display: "Anek Latin", "Mukta", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+
+  --color-paper: #f3f5f4;
+  --color-ink: #15233f;
+
+  --color-slate-50: #f6f8f8;
+  --color-slate-100: #edf0f1;
+  --color-slate-200: #dde2e6;
+  --color-slate-300: #c3cad2;
+  --color-slate-400: #8c96a4;
+  --color-slate-500: #616b7c;
+  --color-slate-600: #485264;
+  --color-slate-700: #343e53;
+  --color-slate-800: #232e46;
+  --color-slate-900: #15233f;
+  --color-slate-950: #0c1630;
+
+  --color-brand-50: #eef2f8;
+  --color-brand-100: #dbe3f0;
+  --color-brand-200: #b8c7e0;
+  --color-brand-500: #2f4f8f;
+  --color-brand-600: #22407a;
+  --color-brand-700: #1a3262;
+
+  --color-emerald-50: #ebf6f0;
+  --color-emerald-100: #d2ebde;
+  --color-emerald-200: #a7d6bf;
+  --color-emerald-500: #22936b;
+  --color-emerald-600: #17785a;
+  --color-emerald-700: #12614a;
+  --color-emerald-800: #0f4f3c;
+  --color-emerald-900: #0b3f30;
+
+  --color-amber-50: #fdf5ea;
+  --color-amber-100: #fae6cb;
+  --color-amber-200: #f2cf9b;
+  --color-amber-300: #e9b46b;
+  --color-amber-500: #d9822b;
+  --color-amber-600: #b8691c;
+  --color-amber-700: #915115;
+  --color-amber-800: #723f10;
+  --color-amber-900: #5a320d;
+  --color-amber-950: #3c2108;
+
+  --color-red-50: #fbedee;
+  --color-red-100: #f6d6d9;
+  --color-red-200: #ecabb1;
+  --color-red-500: #c8323f;
+  --color-red-600: #b42330;
+  --color-red-700: #931c27;
+  --color-red-800: #76161f;
+  --color-red-900: #5e121a;
+
+  --color-sky-50: #ebf5f7;
+  --color-sky-100: #d1e8ee;
+  --color-sky-200: #a6d2de;
+  --color-sky-300: #76bacd;
+  --color-sky-500: #2a879f;
+  --color-sky-600: #1f6e85;
+  --color-sky-700: #19596c;
+  --color-sky-800: #15495a;
+  --color-sky-900: #113b49;
+
+  --color-violet-50: #f2f0fa;
+  --color-violet-100: #e3dff5;
+  --color-violet-200: #c7c0eb;
+  --color-violet-500: #6a5ac0;
+  --color-violet-600: #5747a8;
+  --color-violet-700: #46398a;
+  --color-violet-800: #382d6e;
+  --color-violet-900: #2c2357;
+  --color-violet-950: #1d173b;
+}
+
+html, body { background: var(--color-paper); color: var(--color-ink); }
+body { font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+/* Headings: the wide cut of Anek Latin carries the voice; text stays in Mukta. */
+.display { font-family: var(--font-display); font-stretch: 112%; letter-spacing: -0.012em; }
+h1, h2 { font-family: var(--font-display); font-stretch: 108%; letter-spacing: -0.01em; }
+
+/* Identifiers (GSTIN, PAN, IFSC, account numbers) are compared character by character, so they get a fixed-width face. */
+.mono { font-family: var(--font-mono); font-size: 0.88em; letter-spacing: -0.01em; }
+
+/* Section labels inside a sheet: sentence case, quiet. */
+.label { display: block; font-family: var(--font-display); font-size: 13px; font-weight: 600; color: var(--color-slate-500); }
+
+/* The stamp: how a decided file is marked. The one bold element of the system. */
+.stamp {
+  display: inline-flex; align-items: center; gap: 0.4em;
+  font-family: var(--font-display); font-stretch: 118%; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em;
+  border: 2px solid currentColor; border-radius: 6px; padding: 0.28em 0.7em 0.18em;
+  box-shadow: inset 0 0 0 2px var(--stamp-bg, #fff), inset 0 0 0 3px currentColor;
+  transform: rotate(-2.5deg);
+  -webkit-mask-image: radial-gradient(circle at 30% 40%, #000 62%, rgba(0,0,0,.82) 75%, #000 90%);
+  mask-image: radial-gradient(circle at 30% 40%, #000 62%, rgba(0,0,0,.82) 75%, #000 90%);
+}
+.stamp-press { animation: stamp-press .38s cubic-bezier(.2,.9,.3,1.25) both; }
+@keyframes stamp-press { from { opacity: 0; transform: rotate(-2.5deg) scale(1.35); } to { opacity: 1; transform: rotate(-2.5deg) scale(1); } }
+
+/* A faint guilloche, like the security print behind a cheque, used on the sign-in page and the app header. */
+.guilloche {
+  background-image:
+    repeating-radial-gradient(circle at 0% 100%, transparent 0 22px, rgba(255,255,255,.045) 22px 23px),
+    repeating-radial-gradient(circle at 100% 0%, transparent 0 30px, rgba(255,255,255,.035) 30px 31px);
+}
+
+@keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(.85); } }
+.live-dot { animation: pulse-dot 1.2s ease-in-out infinite; }
+
+@keyframes slide-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.event-in { animation: slide-in .25s ease-out both; }
+
+/* Sign-in: the six stages reveal in order, once. */
+@keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise .5s cubic-bezier(.2,.7,.2,1) both; }
+
+input, select, textarea { outline: none; }
+:focus-visible { outline: 2px solid var(--color-brand-500); outline-offset: 2px; border-radius: 4px; }
+::selection { background: var(--color-amber-200); color: var(--color-ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  .stamp-press, .rise, .event-in, .live-dot { animation: none !important; }
+}

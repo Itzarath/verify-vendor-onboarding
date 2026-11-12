@@ -1,0 +1,31 @@
+# local tooling (kept on D: drive)
+.venv/
+.cache/
+.pgdata/
+node_modules/
+frontend/dist/
+__pycache__/
+*.pyc
+.pytest_cache/
+# secrets
+.env
+.env.*
+!.env.example
+# scratch
+tmp/
+.tools/
+# working notes from the build: agent handoffs, reviewer evidence, research and briefs (kept locally, not part of the product)
+handoffs/
+review/
+research/
+.claude/
+AGENT_RULES.md
+START_HERE.md
+IMPLEMENTATION_BRIEF.md
+PROJECT_BRIEF.md
+CHAT_TRANSCRIPT.md
+*Candidate Guide*.pdf
+qa_*.py
+qa_fixtures_*/
+backend/fixtures/out/spike_log*.txt
+.hermes/

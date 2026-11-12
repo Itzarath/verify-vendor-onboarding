@@ -1,0 +1,393 @@
+{
+  "nimbus_pan.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "AAHCN7316M",
+      "holder_name": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+      "father_name": null,
+      "date": "14/03/2019"
+    }
+  },
+  "nimbus_gst.pdf": {
+    "type": "gst_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "gstin": "29AAHCN7316M1ZW",
+      "legal_name": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+      "trade_name": null,
+      "constitution": "Private Limited Company",
+      "principal_address": "4th Floor, 18 Residency Road, Bengaluru, Karnataka - 560025",
+      "address_state": "Karnataka",
+      "date_of_liability": "01/07/2021",
+      "registration_type": "Regular"
+    }
+  },
+  "nimbus_incorporation.pdf": {
+    "type": "incorporation_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "entity_name": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+      "registration_number": "U72200KA2019PTC128734",
+      "incorporation_date": "14th day of March 2019",
+      "pan": "AAHCN7316M",
+      "entity_kind": "company"
+    }
+  },
+  "nimbus_bank_letter.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "account_holder": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+      "account_number": "000412300045821",
+      "ifsc": "DECB0000412",
+      "bank_name": "Deccan Commercial Bank",
+      "branch": "Residency Road, Bengaluru",
+      "proof_kind": "bank_letter",
+      "document_date": "02/11/2026"
+    }
+  },
+  "nimbus_udyam.pdf": {
+    "type": "msme_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "udyam_number": "UDYAM-KA-03-0045127",
+      "enterprise_name": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+      "enterprise_category": "Small",
+      "organisation_type": "Private Limited Company",
+      "registration_date": "05/01/2022"
+    }
+  },
+  "tejas_pan.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "AACCT5520R",
+      "holder_name": "TEJAS FACILITY SERVICES PRIVATE LIMITED",
+      "father_name": null,
+      "date": "09/06/2017"
+    }
+  },
+  "tejas_gst.pdf": {
+    "type": "gst_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "gstin": "27AACCT5520R1ZV",
+      "legal_name": "TEJAS FACILITY SERVICES PRIVATE LIMITED",
+      "trade_name": "TEJAS CLEANPRO",
+      "constitution": "Private Limited Company",
+      "principal_address": "Unit 7, Lakeview Industrial Estate, Baner, Pune, Maharashtra - 411045",
+      "address_state": "Maharashtra",
+      "date_of_liability": "01/07/2021",
+      "registration_type": "Regular"
+    }
+  },
+  "tejas_incorporation.pdf": {
+    "type": "incorporation_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "entity_name": "TEJAS FACILITY SERVICES PRIVATE LIMITED",
+      "registration_number": "U81210MH2017PTC294518",
+      "incorporation_date": "9th day of June 2017",
+      "pan": "AACCT5520R",
+      "entity_kind": "company"
+    }
+  },
+  "tejas_gst_no_trade_name.pdf": {
+    "type": "gst_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "gstin": "27AACCT5520R1ZV",
+      "legal_name": "TEJAS FACILITY SERVICES PRIVATE LIMITED",
+      "trade_name": null,
+      "constitution": "Private Limited Company",
+      "principal_address": "Unit 7, Lakeview Industrial Estate, Baner, Pune, Maharashtra - 411045",
+      "address_state": "Maharashtra",
+      "date_of_liability": "01/07/2021",
+      "registration_type": "Regular"
+    }
+  },
+  "tejas_cheque.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "account_holder": "TEJAS CLEANPRO",
+      "account_number": "50200011223344",
+      "ifsc": "KONB0001187",
+      "bank_name": "Konkan Union Bank",
+      "branch": "Baner, Pune",
+      "proof_kind": "cancelled_cheque",
+      "document_date": null
+    }
+  },
+  "saffron_pan.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "AAPCS2291H",
+      "holder_name": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED",
+      "father_name": null,
+      "date": "21/09/2020"
+    }
+  },
+  "saffron_gst.pdf": {
+    "type": "gst_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "gstin": "24AAPCS2291H1Z4",
+      "legal_name": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED",
+      "trade_name": null,
+      "constitution": "Private Limited Company",
+      "principal_address": "Plot 41, Sanand GIDC Phase II, Ahmedabad, Gujarat - 382110",
+      "address_state": "Gujarat",
+      "date_of_liability": "01/07/2021",
+      "registration_type": "Regular"
+    }
+  },
+  "saffron_incorporation.pdf": {
+    "type": "incorporation_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "entity_name": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED",
+      "registration_number": "U60200GJ2020PTC115263",
+      "incorporation_date": "21st day of September 2020",
+      "pan": "AAPCS2291H",
+      "entity_kind": "company"
+    }
+  },
+  "saffron_director_pan.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "BQRPM4471K",
+      "holder_name": "ROHAN MEHTA",
+      "father_name": "SURESH MEHTA",
+      "date": "12/08/1986"
+    }
+  },
+  "saffron_bank_letter.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "account_holder": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED",
+      "account_number": "1204005566778",
+      "ifsc": "SBMB0000318",
+      "bank_name": "Sabarmati Mercantile Bank",
+      "branch": "Sanand, Ahmedabad",
+      "proof_kind": "bank_letter",
+      "document_date": "02/11/2026"
+    }
+  },
+  "indigo_pan.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "AAKFI6604B",
+      "holder_name": "INDIGO PIXEL STUDIOS LLP",
+      "father_name": null,
+      "date": "03/02/2021"
+    }
+  },
+  "indigo_gst.pdf": {
+    "type": "gst_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "gstin": "27AAKFI6604B1ZM",
+      "legal_name": "INDIGO PIXEL STUDIOS LLP",
+      "trade_name": null,
+      "constitution": "Limited Liability Partnership",
+      "principal_address": "2nd Floor, Kamala Mills Compound, Lower Parel, Mumbai, Maharashtra - 400013",
+      "address_state": "Maharashtra",
+      "date_of_liability": "01/07/2021",
+      "registration_type": "Regular"
+    }
+  },
+  "indigo_incorporation.pdf": {
+    "type": "incorporation_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "entity_name": "INDIGO PIXEL STUDIOS LLP",
+      "registration_number": "AAQ-9921",
+      "incorporation_date": "3rd day of February 2021",
+      "pan": "AAKFI6604B",
+      "entity_kind": "llp"
+    }
+  },
+  "indigo_cheque_old.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "account_holder": "INDIGO PIXEL STUDIOS LLP",
+      "account_number": "091100078214821",
+      "ifsc": "SAHB0000231",
+      "bank_name": "Sahyadri Commercial Bank",
+      "branch": "Lower Parel, Mumbai",
+      "proof_kind": "cancelled_cheque",
+      "document_date": null
+    }
+  },
+  "indigo_cheque_new.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "account_holder": "INDIGO PIXEL STUDIOS LLP",
+      "account_number": "337700019027390",
+      "ifsc": "KONB0000562",
+      "bank_name": "Konkan Union Bank",
+      "branch": "Worli, Mumbai",
+      "proof_kind": "cancelled_cheque",
+      "document_date": null
+    }
+  },
+  "harbourline_pan.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "AADCH3349P",
+      "holder_name": "HARBOURLINE ANALYTICS PRIVATE LIMITED",
+      "father_name": null,
+      "date": "17/07/2018"
+    }
+  },
+  "harbourline_gst.pdf": {
+    "type": "gst_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "gstin": "36AAKCS8812D1Z9",
+      "legal_name": "SEAVIEW DATA CONSULTANTS PRIVATE LIMITED",
+      "trade_name": "HARBOURLINE ANALYTICS",
+      "constitution": "Private Limited Company",
+      "principal_address": "Plot 12, Cyber Towers Road, Madhapur, Hyderabad, Telangana - 500081",
+      "address_state": "Telangana",
+      "date_of_liability": "01/07/2021",
+      "registration_type": "Regular"
+    }
+  },
+  "harbourline_incorporation.pdf": {
+    "type": "incorporation_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "entity_name": "HARBOURLINE ANALYTICS PRIVATE LIMITED",
+      "registration_number": "U72900TG2018PTC127781",
+      "incorporation_date": "17th day of July 2018",
+      "pan": "AADCH3349P",
+      "entity_kind": "company"
+    }
+  },
+  "harbourline_bank_letter.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "account_holder": "HARBOURLINE ANALYTICS PRIVATE LIMITED",
+      "account_number": "000735100082214",
+      "ifsc": "DECB0000735",
+      "bank_name": "Deccan Commercial Bank",
+      "branch": "Madhapur, Hyderabad",
+      "proof_kind": "bank_letter",
+      "document_date": "02/11/2026"
+    }
+  },
+  "kaveri_pan.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "AAPFK9035C",
+      "holder_name": "KAVERI CLOUDWORKS LLP",
+      "father_name": null,
+      "date": "28/11/2019"
+    }
+  },
+  "kaveri_gst.pdf": {
+    "type": "gst_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "gstin": "33AAPFK9035C1ZD",
+      "legal_name": "KAVERI CLOUDWORKS LLP",
+      "trade_name": null,
+      "constitution": "Limited Liability Partnership",
+      "principal_address": "No. 88, Rajiv Gandhi Salai, Taramani, Chennai, Tamil Nadu - 600113",
+      "address_state": "Tamil Nadu",
+      "date_of_liability": "01/07/2021",
+      "registration_type": "Regular"
+    }
+  },
+  "kaveri_incorporation.pdf": {
+    "type": "incorporation_certificate",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "entity_name": "KAVERI CLOUDWORKS LLP",
+      "registration_number": "AAK-4417",
+      "incorporation_date": "28th day of November 2019",
+      "pan": "AAPFK9035C",
+      "entity_kind": "llp"
+    }
+  },
+  "kaveri_pan_scanned.pdf": {
+    "type": "pan_card",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "pan": "AAPFK9035C",
+      "holder_name": "KAVERI CLOUDWORKS LLP",
+      "father_name": null,
+      "date": "28/11/2019"
+    }
+  },
+  "kaveri_bank_mixed.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [],
+    "fields": {
+      "account_holder": "KAVERI CLOUDWORKS LLP",
+      "account_number": "004420019935107",
+      "ifsc": "CTBK0000442",
+      "bank_name": "Coromandel Trust Bank",
+      "branch": "Taramani, Chennai",
+      "proof_kind": "bank_letter",
+      "document_date": "02/11/2026"
+    }
+  },
+  "kaveri_cheque_unreadable_scan.pdf": {
+    "type": "bank_proof",
+    "page": 1,
+    "unreadable": [
+      "account_number"
+    ],
+    "fields": {
+      "account_holder": "KAVERI CLOUDWORKS LLP",
+      "account_number": null,
+      "ifsc": "CTBK0000442",
+      "bank_name": "Coromandel Trust Bank",
+      "branch": "Taramani, Chennai",
+      "proof_kind": "cancelled_cheque",
+      "document_date": null
+    }
+  }
+}

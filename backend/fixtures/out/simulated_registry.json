@@ -1,0 +1,437 @@
+{
+  "_note": "SIMULATED registry for synthetic fixtures only",
+  "gstin": {
+    "29AAHCN7316M1ZW": {
+      "legal_name": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+      "trade_name": null,
+      "status": "Active",
+      "state": "Karnataka",
+      "constitution": "Private Limited Company",
+      "registered_on": "01/07/2021",
+      "taxpayer_type": "Regular",
+      "filings_as_of": "2026-11-01",
+      "filings": [
+        {
+          "period": "2025-10",
+          "gstr1_filed_on": "2025-11-11",
+          "gstr3b_filed_on": "2025-11-20"
+        },
+        {
+          "period": "2025-11",
+          "gstr1_filed_on": "2025-12-11",
+          "gstr3b_filed_on": "2025-12-20"
+        },
+        {
+          "period": "2025-12",
+          "gstr1_filed_on": "2026-01-11",
+          "gstr3b_filed_on": "2026-01-20"
+        },
+        {
+          "period": "2026-01",
+          "gstr1_filed_on": "2026-02-11",
+          "gstr3b_filed_on": "2026-02-20"
+        },
+        {
+          "period": "2026-02",
+          "gstr1_filed_on": "2026-03-11",
+          "gstr3b_filed_on": "2026-03-20"
+        },
+        {
+          "period": "2026-03",
+          "gstr1_filed_on": "2026-04-11",
+          "gstr3b_filed_on": "2026-04-20"
+        },
+        {
+          "period": "2026-04",
+          "gstr1_filed_on": "2026-05-11",
+          "gstr3b_filed_on": "2026-05-20"
+        },
+        {
+          "period": "2026-05",
+          "gstr1_filed_on": "2026-06-11",
+          "gstr3b_filed_on": "2026-06-20"
+        },
+        {
+          "period": "2026-06",
+          "gstr1_filed_on": "2026-07-11",
+          "gstr3b_filed_on": "2026-07-20"
+        },
+        {
+          "period": "2026-07",
+          "gstr1_filed_on": "2026-08-11",
+          "gstr3b_filed_on": "2026-08-20"
+        },
+        {
+          "period": "2026-08",
+          "gstr1_filed_on": "2026-09-11",
+          "gstr3b_filed_on": "2026-09-20"
+        },
+        {
+          "period": "2026-09",
+          "gstr1_filed_on": "2026-10-11",
+          "gstr3b_filed_on": "2026-10-20"
+        }
+      ]
+    },
+    "27AACCT5520R1ZV": {
+      "legal_name": "TEJAS FACILITY SERVICES PRIVATE LIMITED",
+      "trade_name": "TEJAS CLEANPRO",
+      "status": "Active",
+      "state": "Maharashtra",
+      "constitution": "Private Limited Company",
+      "registered_on": "01/07/2021",
+      "taxpayer_type": "Regular",
+      "filings_as_of": "2026-11-01",
+      "filings": [
+        {
+          "period": "2025-10",
+          "gstr1_filed_on": "2025-11-11",
+          "gstr3b_filed_on": "2025-11-20"
+        },
+        {
+          "period": "2025-11",
+          "gstr1_filed_on": "2025-12-11",
+          "gstr3b_filed_on": "2025-12-20"
+        },
+        {
+          "period": "2025-12",
+          "gstr1_filed_on": "2026-01-11",
+          "gstr3b_filed_on": "2026-01-20"
+        },
+        {
+          "period": "2026-01",
+          "gstr1_filed_on": "2026-02-11",
+          "gstr3b_filed_on": "2026-02-20"
+        },
+        {
+          "period": "2026-02",
+          "gstr1_filed_on": "2026-03-11",
+          "gstr3b_filed_on": "2026-03-20"
+        },
+        {
+          "period": "2026-03",
+          "gstr1_filed_on": "2026-04-11",
+          "gstr3b_filed_on": "2026-04-20"
+        },
+        {
+          "period": "2026-04",
+          "gstr1_filed_on": "2026-05-11",
+          "gstr3b_filed_on": "2026-05-20"
+        },
+        {
+          "period": "2026-05",
+          "gstr1_filed_on": "2026-06-11",
+          "gstr3b_filed_on": "2026-06-20"
+        },
+        {
+          "period": "2026-06",
+          "gstr1_filed_on": "2026-07-11",
+          "gstr3b_filed_on": "2026-07-20"
+        },
+        {
+          "period": "2026-07",
+          "gstr1_filed_on": "2026-08-11",
+          "gstr3b_filed_on": "2026-08-20"
+        },
+        {
+          "period": "2026-08",
+          "gstr1_filed_on": "2026-09-11",
+          "gstr3b_filed_on": "2026-09-20"
+        },
+        {
+          "period": "2026-09",
+          "gstr1_filed_on": "2026-10-11",
+          "gstr3b_filed_on": "2026-10-20"
+        }
+      ]
+    },
+    "24AAPCS2291H1Z4": {
+      "legal_name": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED",
+      "trade_name": null,
+      "status": "Active",
+      "state": "Gujarat",
+      "constitution": "Private Limited Company",
+      "registered_on": "01/07/2021",
+      "taxpayer_type": "Regular",
+      "filings_as_of": "2026-11-01",
+      "filings": [
+        {
+          "period": "2025-10",
+          "gstr1_filed_on": "2025-11-11",
+          "gstr3b_filed_on": "2025-11-20"
+        },
+        {
+          "period": "2025-11",
+          "gstr1_filed_on": "2025-12-11",
+          "gstr3b_filed_on": "2025-12-20"
+        },
+        {
+          "period": "2025-12",
+          "gstr1_filed_on": "2026-01-11",
+          "gstr3b_filed_on": "2026-01-20"
+        },
+        {
+          "period": "2026-01",
+          "gstr1_filed_on": "2026-02-11",
+          "gstr3b_filed_on": "2026-02-20"
+        },
+        {
+          "period": "2026-02",
+          "gstr1_filed_on": "2026-03-11",
+          "gstr3b_filed_on": "2026-03-20"
+        },
+        {
+          "period": "2026-03",
+          "gstr1_filed_on": "2026-04-11",
+          "gstr3b_filed_on": "2026-04-20"
+        },
+        {
+          "period": "2026-04",
+          "gstr1_filed_on": "2026-05-11",
+          "gstr3b_filed_on": null
+        },
+        {
+          "period": "2026-05",
+          "gstr1_filed_on": "2026-06-11",
+          "gstr3b_filed_on": null
+        },
+        {
+          "period": "2026-06",
+          "gstr1_filed_on": "2026-07-11",
+          "gstr3b_filed_on": "2026-07-20"
+        },
+        {
+          "period": "2026-07",
+          "gstr1_filed_on": "2026-08-11",
+          "gstr3b_filed_on": null
+        },
+        {
+          "period": "2026-08",
+          "gstr1_filed_on": "2026-09-11",
+          "gstr3b_filed_on": "2026-09-20"
+        },
+        {
+          "period": "2026-09",
+          "gstr1_filed_on": "2026-10-11",
+          "gstr3b_filed_on": "2026-10-20"
+        }
+      ]
+    },
+    "27AAKFI6604B1ZM": {
+      "legal_name": "INDIGO PIXEL STUDIOS LLP",
+      "trade_name": null,
+      "status": "Active",
+      "state": "Maharashtra",
+      "constitution": "Limited Liability Partnership",
+      "registered_on": "01/07/2021",
+      "taxpayer_type": "Regular",
+      "filings_as_of": "2026-11-01",
+      "filings": [
+        {
+          "period": "2025-10",
+          "gstr1_filed_on": "2025-11-11",
+          "gstr3b_filed_on": "2025-11-20"
+        },
+        {
+          "period": "2025-11",
+          "gstr1_filed_on": "2025-12-11",
+          "gstr3b_filed_on": "2025-12-20"
+        },
+        {
+          "period": "2025-12",
+          "gstr1_filed_on": "2026-01-11",
+          "gstr3b_filed_on": "2026-01-20"
+        },
+        {
+          "period": "2026-01",
+          "gstr1_filed_on": "2026-02-11",
+          "gstr3b_filed_on": "2026-02-20"
+        },
+        {
+          "period": "2026-02",
+          "gstr1_filed_on": "2026-03-11",
+          "gstr3b_filed_on": "2026-03-20"
+        },
+        {
+          "period": "2026-03",
+          "gstr1_filed_on": "2026-04-11",
+          "gstr3b_filed_on": "2026-04-20"
+        },
+        {
+          "period": "2026-04",
+          "gstr1_filed_on": "2026-05-11",
+          "gstr3b_filed_on": "2026-05-20"
+        },
+        {
+          "period": "2026-05",
+          "gstr1_filed_on": "2026-06-11",
+          "gstr3b_filed_on": "2026-06-20"
+        },
+        {
+          "period": "2026-06",
+          "gstr1_filed_on": "2026-07-11",
+          "gstr3b_filed_on": "2026-07-20"
+        },
+        {
+          "period": "2026-07",
+          "gstr1_filed_on": "2026-08-11",
+          "gstr3b_filed_on": "2026-08-20"
+        },
+        {
+          "period": "2026-08",
+          "gstr1_filed_on": "2026-09-11",
+          "gstr3b_filed_on": "2026-09-20"
+        },
+        {
+          "period": "2026-09",
+          "gstr1_filed_on": "2026-10-11",
+          "gstr3b_filed_on": "2026-10-20"
+        }
+      ]
+    },
+    "36AAKCS8812D1Z9": {
+      "legal_name": "SEAVIEW DATA CONSULTANTS PRIVATE LIMITED",
+      "trade_name": "HARBOURLINE ANALYTICS",
+      "status": "Active",
+      "state": "Telangana",
+      "constitution": "Private Limited Company",
+      "registered_on": "01/07/2021",
+      "taxpayer_type": "Regular",
+      "filings_as_of": "2026-11-01",
+      "filings": [
+        {
+          "period": "2025-10",
+          "gstr1_filed_on": "2025-11-11",
+          "gstr3b_filed_on": "2025-11-20"
+        },
+        {
+          "period": "2025-11",
+          "gstr1_filed_on": "2025-12-11",
+          "gstr3b_filed_on": "2025-12-20"
+        },
+        {
+          "period": "2025-12",
+          "gstr1_filed_on": "2026-01-11",
+          "gstr3b_filed_on": "2026-01-20"
+        },
+        {
+          "period": "2026-01",
+          "gstr1_filed_on": "2026-02-11",
+          "gstr3b_filed_on": "2026-02-20"
+        },
+        {
+          "period": "2026-02",
+          "gstr1_filed_on": "2026-03-11",
+          "gstr3b_filed_on": "2026-03-20"
+        },
+        {
+          "period": "2026-03",
+          "gstr1_filed_on": "2026-04-11",
+          "gstr3b_filed_on": "2026-04-20"
+        },
+        {
+          "period": "2026-04",
+          "gstr1_filed_on": "2026-05-11",
+          "gstr3b_filed_on": "2026-05-20"
+        },
+        {
+          "period": "2026-05",
+          "gstr1_filed_on": "2026-06-11",
+          "gstr3b_filed_on": "2026-06-20"
+        },
+        {
+          "period": "2026-06",
+          "gstr1_filed_on": "2026-07-11",
+          "gstr3b_filed_on": "2026-07-20"
+        },
+        {
+          "period": "2026-07",
+          "gstr1_filed_on": "2026-08-11",
+          "gstr3b_filed_on": "2026-08-20"
+        },
+        {
+          "period": "2026-08",
+          "gstr1_filed_on": "2026-09-11",
+          "gstr3b_filed_on": "2026-09-20"
+        },
+        {
+          "period": "2026-09",
+          "gstr1_filed_on": "2026-10-11",
+          "gstr3b_filed_on": "2026-10-20"
+        }
+      ]
+    },
+    "33AAPFK9035C1ZD": {
+      "legal_name": "KAVERI CLOUDWORKS LLP",
+      "trade_name": null,
+      "status": "Active",
+      "state": "Tamil Nadu",
+      "constitution": "Limited Liability Partnership",
+      "registered_on": "01/07/2021",
+      "taxpayer_type": "Regular",
+      "filings_as_of": "2026-11-01",
+      "filings": [
+        {
+          "period": "2025-10",
+          "gstr1_filed_on": "2025-11-11",
+          "gstr3b_filed_on": "2025-11-20"
+        },
+        {
+          "period": "2025-11",
+          "gstr1_filed_on": "2025-12-11",
+          "gstr3b_filed_on": "2025-12-20"
+        },
+        {
+          "period": "2025-12",
+          "gstr1_filed_on": "2026-01-11",
+          "gstr3b_filed_on": "2026-01-20"
+        },
+        {
+          "period": "2026-01",
+          "gstr1_filed_on": "2026-02-11",
+          "gstr3b_filed_on": "2026-02-20"
+        },
+        {
+          "period": "2026-02",
+          "gstr1_filed_on": "2026-03-11",
+          "gstr3b_filed_on": "2026-03-20"
+        },
+        {
+          "period": "2026-03",
+          "gstr1_filed_on": "2026-04-11",
+          "gstr3b_filed_on": "2026-04-20"
+        },
+        {
+          "period": "2026-04",
+          "gstr1_filed_on": "2026-05-11",
+          "gstr3b_filed_on": "2026-05-20"
+        },
+        {
+          "period": "2026-05",
+          "gstr1_filed_on": "2026-06-11",
+          "gstr3b_filed_on": "2026-06-20"
+        },
+        {
+          "period": "2026-06",
+          "gstr1_filed_on": "2026-07-11",
+          "gstr3b_filed_on": "2026-07-20"
+        },
+        {
+          "period": "2026-07",
+          "gstr1_filed_on": "2026-08-11",
+          "gstr3b_filed_on": "2026-08-20"
+        },
+        {
+          "period": "2026-08",
+          "gstr1_filed_on": "2026-09-11",
+          "gstr3b_filed_on": "2026-09-20"
+        },
+        {
+          "period": "2026-09",
+          "gstr1_filed_on": "2026-10-11",
+          "gstr3b_filed_on": "2026-10-20"
+        }
+      ]
+    }
+  }
+}

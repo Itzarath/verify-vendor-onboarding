@@ -1,0 +1,133 @@
+{
+  "_note": "SANDBOX verification sources for the fictional samples only (SIMULATED; see fixtures/sandbox.py)",
+  "bank_codes": [
+    "CTBK",
+    "DECB",
+    "KONB",
+    "SAHB",
+    "SBMB"
+  ],
+  "banks": {
+    "DECB0000412": {
+      "IFSC": "DECB0000412",
+      "BANK": "Deccan Commercial Bank",
+      "BRANCH": "Residency Road, Bengaluru",
+      "CITY": "BENGALURU",
+      "STATE": "KARNATAKA",
+      "BANKCODE": "DECB",
+      "NEFT": true,
+      "RTGS": true,
+      "IMPS": true,
+      "UPI": true
+    },
+    "KONB0001187": {
+      "IFSC": "KONB0001187",
+      "BANK": "Konkan Union Bank",
+      "BRANCH": "Baner, Pune",
+      "CITY": "PUNE",
+      "STATE": "MAHARASHTRA",
+      "BANKCODE": "KONB",
+      "NEFT": true,
+      "RTGS": true,
+      "IMPS": true,
+      "UPI": true
+    },
+    "SBMB0000318": {
+      "IFSC": "SBMB0000318",
+      "BANK": "Sabarmati Mercantile Bank",
+      "BRANCH": "Sanand, Ahmedabad",
+      "CITY": "AHMEDABAD",
+      "STATE": "GUJARAT",
+      "BANKCODE": "SBMB",
+      "NEFT": true,
+      "RTGS": true,
+      "IMPS": true,
+      "UPI": true
+    },
+    "SAHB0000231": {
+      "IFSC": "SAHB0000231",
+      "BANK": "Sahyadri Commercial Bank",
+      "BRANCH": "Lower Parel, Mumbai",
+      "CITY": "MUMBAI",
+      "STATE": "MAHARASHTRA",
+      "BANKCODE": "SAHB",
+      "NEFT": true,
+      "RTGS": true,
+      "IMPS": true,
+      "UPI": true
+    },
+    "KONB0000562": {
+      "IFSC": "KONB0000562",
+      "BANK": "Konkan Union Bank",
+      "BRANCH": "Worli, Mumbai",
+      "CITY": "MUMBAI",
+      "STATE": "MAHARASHTRA",
+      "BANKCODE": "KONB",
+      "NEFT": true,
+      "RTGS": true,
+      "IMPS": true,
+      "UPI": true
+    },
+    "DECB0000735": {
+      "IFSC": "DECB0000735",
+      "BANK": "Deccan Commercial Bank",
+      "BRANCH": "Madhapur, Hyderabad",
+      "CITY": "HYDERABAD",
+      "STATE": "TELANGANA",
+      "BANKCODE": "DECB",
+      "NEFT": true,
+      "RTGS": true,
+      "IMPS": true,
+      "UPI": true
+    },
+    "CTBK0000442": {
+      "IFSC": "CTBK0000442",
+      "BANK": "Coromandel Trust Bank",
+      "BRANCH": "Taramani, Chennai",
+      "CITY": "CHENNAI",
+      "STATE": "TAMIL NADU",
+      "BANKCODE": "CTBK",
+      "NEFT": true,
+      "RTGS": true,
+      "IMPS": true,
+      "UPI": true
+    }
+  },
+  "accounts": {
+    "000412300099999|DECB0000412": {
+      "status": "VALID",
+      "name_at_bank": "RAVI KUMAR SHARMA"
+    },
+    "000412300000000|DECB0000412": {
+      "status": "INVALID"
+    },
+    "000412300045821|DECB0000412": {
+      "status": "VALID",
+      "name_at_bank": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED"
+    },
+    "50200011223344|KONB0001187": {
+      "status": "VALID",
+      "name_at_bank": "TEJAS CLEANPRO"
+    },
+    "1204005566778|SBMB0000318": {
+      "status": "VALID",
+      "name_at_bank": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED"
+    },
+    "091100078214821|SAHB0000231": {
+      "status": "VALID",
+      "name_at_bank": "INDIGO PIXEL STUDIOS LLP"
+    },
+    "337700019027390|KONB0000562": {
+      "status": "VALID",
+      "name_at_bank": "INDIGO PIXEL STUDIOS LLP"
+    },
+    "000735100082214|DECB0000735": {
+      "status": "VALID",
+      "name_at_bank": "HARBOURLINE ANALYTICS PRIVATE LIMITED"
+    },
+    "004420019935107|CTBK0000442": {
+      "status": "VALID",
+      "name_at_bank": "KAVERI CLOUDWORKS LLP"
+    }
+  }
+}

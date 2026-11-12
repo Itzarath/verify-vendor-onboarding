@@ -1,0 +1,18 @@
+# What the server needs at runtime, and nothing else (the image installs this list, constrained to the exact
+# versions tested locally in requirements.txt). Test tools, fixture generators and unused SDKs stay out.
+fastapi==0.162.1
+uvicorn==0.54.0
+httptools==0.9.0
+python-multipart==0.0.33
+SQLAlchemy==2.1.8
+alembic==1.20.1
+psycopg[binary]==3.3.8
+pydantic==2.14.3
+pydantic-settings==2.16.2
+itsdangerous==2.2.0
+pymupdf==2.1  # installed with --no-deps in the Dockerfile: its optional extras are not used
+openai==3.46.0
+httpx==0.28.1  # live lookups in public verification sources (also used by openai)
+cryptography==50.0.2  # digital-signature checks on official certificates
+asn1crypto==1.5.1  # reads the PDF signature structure (CMS / PKCS#7)
+tzdata==2026.6

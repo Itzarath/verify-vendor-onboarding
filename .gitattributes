@@ -1,0 +1,5 @@
+# Documents and images are bytes: never convert their line endings (a converted PDF is corrupt).
+*.pdf binary
+*.PDF binary
+*.png binary
+*.jpg binary
