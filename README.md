@@ -33,7 +33,7 @@ Approval creates the supplier's approved profile and a **vendor master record** 
 
 ## Try it
 
-The supplier form has a **Demo helper** with prepared synthetic applications. Their documents are real PDFs that have already been read, so they run in seconds without calling a model.
+The supplier form has a **Demo helper** with prepared synthetic applications. Their documents are real PDFs that have already been read, so they run in seconds without calling a model. The same documents and application forms are in [datasets/](datasets/), one folder per fictional vendor.
 
 | Sample | What it shows |
 |---|---|
@@ -114,6 +114,7 @@ backend/
   migrations/     Alembic
   tests/
 frontend/src/     supplier portal, reviewer dashboard, case view, live run view
+datasets/         the synthetic vendors: their documents and application forms
 docs/             architecture and deployment
 ```
 

@@ -1,0 +1,60 @@
+{
+  "title": "Code of conduct left unanswered",
+  "expected_outcome": "ACTION_REQUIRED: answer the code-of-conduct question (not a rejection)",
+  "documents": {
+    "bank_proof": "../documents/nimbus_bank_letter.pdf",
+    "gst_certificate": "../documents/nimbus_gst.pdf",
+    "incorporation_certificate": "../documents/nimbus_incorporation.pdf",
+    "msme_certificate": "../documents/nimbus_udyam.pdf",
+    "pan_card": "../documents/nimbus_pan.pdf"
+  },
+  "form": {
+    "business": {
+      "legal_name": "Nimbus Ledger Solutions Private Limited",
+      "trade_name": null,
+      "entity_type": "private_limited",
+      "registration_number": "U72200KA2019PTC128734",
+      "incorporation_date": "14/03/2019",
+      "registered_address": {
+        "line1": "4th Floor, 18 Residency Road",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pincode": "560025"
+      }
+    },
+    "service": {
+      "category": "IT services & software",
+      "description": "IT services & software for buyer sites and teams",
+      "onsite_work": "no",
+      "buyer_contact": "Procurement — Services"
+    },
+    "contact": {
+      "name": "Ananya Rao",
+      "role": "Finance Manager",
+      "email": "ananya.rao@nimbusledger.example",
+      "phone": "+91 80 4000 1122",
+      "signatory_name": "Vikram Shetty",
+      "signatory_designation": "Director"
+    },
+    "tax": {
+      "pan": "AAHCN7316M",
+      "gst_registered": "yes",
+      "gstin": "29AAHCN7316M1ZW",
+      "msme_registered": "yes",
+      "udyam_number": "UDYAM-KA-03-0045127"
+    },
+    "bank": {
+      "account_holder": "NIMBUS LEDGER SOLUTIONS PRIVATE LIMITED",
+      "account_number": "000412300045821",
+      "ifsc": "DECB0000412",
+      "bank_name": "Deccan Commercial Bank",
+      "branch": "Residency Road, Bengaluru"
+    },
+    "declarations": {
+      "information_correct": true,
+      "conduct_acceptance": null,
+      "conflict_of_interest": "none",
+      "conflict_details": null
+    }
+  }
+}

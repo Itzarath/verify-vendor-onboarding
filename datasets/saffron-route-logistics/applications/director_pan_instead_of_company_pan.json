@@ -1,0 +1,59 @@
+{
+  "title": "Edge 2 — Director's personal PAN instead of company PAN",
+  "expected_outcome": "ACTION_REQUIRED: provide company PAN (system points to PAN on incorporation certificate and GSTIN)",
+  "documents": {
+    "bank_proof": "../documents/saffron_bank_letter.pdf",
+    "gst_certificate": "../documents/saffron_gst.pdf",
+    "incorporation_certificate": "../documents/saffron_incorporation.pdf",
+    "pan_card": "../documents/saffron_director_pan.pdf"
+  },
+  "form": {
+    "business": {
+      "legal_name": "Saffron Route Logistics Private Limited",
+      "trade_name": null,
+      "entity_type": "private_limited",
+      "registration_number": "U60200GJ2020PTC115263",
+      "incorporation_date": "21/09/2020",
+      "registered_address": {
+        "line1": "Plot 41, Sanand GIDC Phase II",
+        "city": "Ahmedabad",
+        "state": "Gujarat",
+        "pincode": "382110"
+      }
+    },
+    "service": {
+      "category": "Logistics & transport",
+      "description": "Logistics & transport for buyer sites and teams",
+      "onsite_work": "no",
+      "buyer_contact": "Procurement — Services"
+    },
+    "contact": {
+      "name": "Rohan Mehta",
+      "role": "Director",
+      "email": "rohan@saffronroute.example",
+      "phone": "+91 79 2900 7788",
+      "signatory_name": "Rohan Mehta",
+      "signatory_designation": "Director"
+    },
+    "tax": {
+      "pan": "BQRPM4471K",
+      "gst_registered": "yes",
+      "gstin": "24AAPCS2291H1Z4",
+      "msme_registered": "no",
+      "udyam_number": null
+    },
+    "bank": {
+      "account_holder": "SAFFRON ROUTE LOGISTICS PRIVATE LIMITED",
+      "account_number": "1204005566778",
+      "ifsc": "SBMB0000318",
+      "bank_name": "Sabarmati Mercantile Bank",
+      "branch": "Sanand, Ahmedabad"
+    },
+    "declarations": {
+      "information_correct": true,
+      "conduct_acceptance": "accepted",
+      "conflict_of_interest": "none",
+      "conflict_details": null
+    }
+  }
+}

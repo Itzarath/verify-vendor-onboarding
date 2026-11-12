@@ -1,0 +1,59 @@
+{
+  "title": "Edge 4 — GSTIN belongs to a different legal entity",
+  "expected_outcome": "ACTION_REQUIRED clarification → unresolved → reviewer rejects with reason",
+  "documents": {
+    "bank_proof": "../documents/harbourline_bank_letter.pdf",
+    "gst_certificate": "../documents/harbourline_gst.pdf",
+    "incorporation_certificate": "../documents/harbourline_incorporation.pdf",
+    "pan_card": "../documents/harbourline_pan.pdf"
+  },
+  "form": {
+    "business": {
+      "legal_name": "Harbourline Analytics Private Limited",
+      "trade_name": null,
+      "entity_type": "private_limited",
+      "registration_number": "U72900TG2018PTC127781",
+      "incorporation_date": "17/07/2018",
+      "registered_address": {
+        "line1": "Plot 12, Cyber Towers Road, Madhapur",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "pincode": "500081"
+      }
+    },
+    "service": {
+      "category": "IT services & software",
+      "description": "IT services & software for buyer sites and teams",
+      "onsite_work": "no",
+      "buyer_contact": "Procurement — Services"
+    },
+    "contact": {
+      "name": "Sana Qureshi",
+      "role": "Accounts Lead",
+      "email": "sana@harbourline.example",
+      "phone": "+91 40 4455 9900",
+      "signatory_name": "Arjun Reddy",
+      "signatory_designation": "Director"
+    },
+    "tax": {
+      "pan": "AADCH3349P",
+      "gst_registered": "yes",
+      "gstin": "36AAKCS8812D1Z9",
+      "msme_registered": "no",
+      "udyam_number": null
+    },
+    "bank": {
+      "account_holder": "HARBOURLINE ANALYTICS PRIVATE LIMITED",
+      "account_number": "000735100082214",
+      "ifsc": "DECB0000735",
+      "bank_name": "Deccan Commercial Bank",
+      "branch": "Madhapur, Hyderabad"
+    },
+    "declarations": {
+      "information_correct": true,
+      "conduct_acceptance": "accepted",
+      "conflict_of_interest": "none",
+      "conflict_details": null
+    }
+  }
+}

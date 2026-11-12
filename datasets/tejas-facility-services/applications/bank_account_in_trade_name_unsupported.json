@@ -1,0 +1,59 @@
+{
+  "title": "Edge 1b — Bank account in trade name, no supporting evidence",
+  "expected_outcome": "ACTION_REQUIRED: vendor asked to evidence the account-holder name",
+  "documents": {
+    "bank_proof": "../documents/tejas_cheque.pdf",
+    "gst_certificate": "../documents/tejas_gst_no_trade_name.pdf",
+    "incorporation_certificate": "../documents/tejas_incorporation.pdf",
+    "pan_card": "../documents/tejas_pan.pdf"
+  },
+  "form": {
+    "business": {
+      "legal_name": "Tejas Facility Services Private Limited",
+      "trade_name": null,
+      "entity_type": "private_limited",
+      "registration_number": "U81210MH2017PTC294518",
+      "incorporation_date": "09/06/2017",
+      "registered_address": {
+        "line1": "Unit 7, Lakeview Industrial Estate, Baner",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411045"
+      }
+    },
+    "service": {
+      "category": "Facility management",
+      "description": "Facility management for buyer sites and teams",
+      "onsite_work": "yes",
+      "buyer_contact": "Procurement — Services"
+    },
+    "contact": {
+      "name": "Meera Kulkarni",
+      "role": "Operations Head",
+      "email": "meera@tejascleanpro.example",
+      "phone": "+91 20 6600 4411",
+      "signatory_name": "Prakash Joshi",
+      "signatory_designation": "Managing Director"
+    },
+    "tax": {
+      "pan": "AACCT5520R",
+      "gst_registered": "yes",
+      "gstin": "27AACCT5520R1ZV",
+      "msme_registered": "no",
+      "udyam_number": null
+    },
+    "bank": {
+      "account_holder": "TEJAS CLEANPRO",
+      "account_number": "50200011223344",
+      "ifsc": "KONB0001187",
+      "bank_name": "Konkan Union Bank",
+      "branch": "Baner, Pune"
+    },
+    "declarations": {
+      "information_correct": true,
+      "conduct_acceptance": "accepted",
+      "conflict_of_interest": "none",
+      "conflict_details": null
+    }
+  }
+}

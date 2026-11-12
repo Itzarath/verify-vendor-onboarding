@@ -1,0 +1,59 @@
+{
+  "title": "Edge 3 (rev 2) — certificate supplied AND bank account changed",
+  "expected_outcome": "Certificate satisfied; bank change detected → finance review; stale approval blocked",
+  "documents": {
+    "bank_proof": "../documents/indigo_cheque_new.pdf",
+    "gst_certificate": "../documents/indigo_gst.pdf",
+    "incorporation_certificate": "../documents/indigo_incorporation.pdf",
+    "pan_card": "../documents/indigo_pan.pdf"
+  },
+  "form": {
+    "business": {
+      "legal_name": "Indigo Pixel Studios LLP",
+      "trade_name": null,
+      "entity_type": "llp",
+      "registration_number": "AAQ-9921",
+      "incorporation_date": "03/02/2021",
+      "registered_address": {
+        "line1": "2nd Floor, Kamala Mills Compound, Lower Parel",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400013"
+      }
+    },
+    "service": {
+      "category": "Marketing & advertising",
+      "description": "Marketing & advertising for buyer sites and teams",
+      "onsite_work": "no",
+      "buyer_contact": "Procurement — Services"
+    },
+    "contact": {
+      "name": "Kabir Fernandes",
+      "role": "Partner",
+      "email": "kabir@indigopixel.example",
+      "phone": "+91 22 6100 3030",
+      "signatory_name": "Kabir Fernandes",
+      "signatory_designation": "Designated Partner"
+    },
+    "tax": {
+      "pan": "AAKFI6604B",
+      "gst_registered": "yes",
+      "gstin": "27AAKFI6604B1ZM",
+      "msme_registered": "no",
+      "udyam_number": null
+    },
+    "bank": {
+      "account_holder": "INDIGO PIXEL STUDIOS LLP",
+      "account_number": "337700019027390",
+      "ifsc": "KONB0000562",
+      "bank_name": "Konkan Union Bank",
+      "branch": "Worli, Mumbai"
+    },
+    "declarations": {
+      "information_correct": true,
+      "conduct_acceptance": "accepted",
+      "conflict_of_interest": "none",
+      "conflict_details": null
+    }
+  }
+}

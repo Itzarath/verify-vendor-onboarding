@@ -1,0 +1,59 @@
+{
+  "title": "Scanned + mixed documents, MSME claimed without certificate (Buyer A blocks, Buyer B doesn't)",
+  "expected_outcome": "Buyer A: ACTION_REQUIRED (MSME proof). Buyer B: not blocked by MSME",
+  "documents": {
+    "bank_proof": "../documents/kaveri_bank_mixed.pdf",
+    "gst_certificate": "../documents/kaveri_gst.pdf",
+    "incorporation_certificate": "../documents/kaveri_incorporation.pdf",
+    "pan_card": "../documents/kaveri_pan_scanned.pdf"
+  },
+  "form": {
+    "business": {
+      "legal_name": "Kaveri Cloudworks LLP",
+      "trade_name": null,
+      "entity_type": "llp",
+      "registration_number": "AAK-4417",
+      "incorporation_date": "28/11/2019",
+      "registered_address": {
+        "line1": "No. 88, Rajiv Gandhi Salai, Taramani",
+        "city": "Chennai",
+        "state": "Tamil Nadu",
+        "pincode": "600113"
+      }
+    },
+    "service": {
+      "category": "IT services & software",
+      "description": "IT services & software for buyer sites and teams",
+      "onsite_work": "no",
+      "buyer_contact": "Procurement — Services"
+    },
+    "contact": {
+      "name": "Divya Natarajan",
+      "role": "Partner",
+      "email": "divya@kavericloud.example",
+      "phone": "+91 44 4800 2200",
+      "signatory_name": "Divya Natarajan",
+      "signatory_designation": "Designated Partner"
+    },
+    "tax": {
+      "pan": "AAPFK9035C",
+      "gst_registered": "yes",
+      "gstin": "33AAPFK9035C1ZD",
+      "msme_registered": "yes",
+      "udyam_number": "UDYAM-TN-02-0078812"
+    },
+    "bank": {
+      "account_holder": "KAVERI CLOUDWORKS LLP",
+      "account_number": "004420019935107",
+      "ifsc": "CTBK0000442",
+      "bank_name": "Coromandel Trust Bank",
+      "branch": "Taramani, Chennai"
+    },
+    "declarations": {
+      "information_correct": true,
+      "conduct_acceptance": "accepted",
+      "conflict_of_interest": "none",
+      "conflict_details": null
+    }
+  }
+}
