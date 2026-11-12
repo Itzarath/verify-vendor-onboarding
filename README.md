@@ -2,7 +2,7 @@
 
 Verify takes a supplier's onboarding application (a form and its PDF documents) and decides whether the buyer can approve the supplier. Every application ends **approved**, **pending** or **rejected**. A pending one says exactly what is still needed and who owes it: the supplier, a procurement reviewer or finance. The supplier is told in plain language what to fix.
 
-**Live demo:** https://verify-vendor-onboarding.onrender.com. The hosted demo asks for an access code, which is shared with the submission. All companies, people and documents in it are fictional.
+**Live demo:** https://verify-vendor-onboarding.onrender.com. Open it and pick a role; there is nothing to sign up for. All companies, people and documents in it are fictional.
 
 Scope: Indian private limited companies and LLPs supplying services to a buyer. Other entity types are routed to a reviewer as out of scope, never rejected.
 
@@ -102,7 +102,7 @@ cd backend && ../.venv/Scripts/python -m pytest -q
 ```
 backend/
   app/
-    api/          routes, sign-in, the demo access gate
+    api/          routes, sign-in, an optional access gate
     services/     commands (every write) and views (separate supplier and staff pages)
     pipeline/     worker, runner, compare, checks, risk, routing, approval, vendor master record
     extraction/   model client with backups, reading contract, cache
@@ -119,7 +119,7 @@ docs/             architecture and deployment
 
 ## Limits
 
-- **Sign-in is a persona picker behind a shared access code.** That's enough for a demo, not for production.
+- **Sign-in is a persona picker with no passwords.** That's enough for a demo, not for production.
 - **Fresh documents are slow to read on the free model tier,** about 1–4 minutes each. The samples are cached.
 - **Two of the source checks are simulated,** the GST registry and the bank account check, and PAN, MCA and Udyam are not checked at the source. Production would call paid providers.
 - **Not built:** e-mail reminders, periodic re-verification, employee conflict-of-interest matching, and a direct push into an ERP system. The vendor master record is exported instead.

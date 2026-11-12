@@ -30,8 +30,9 @@ def check_production_settings(s) -> None:
         problems.append("EXTRACTION_MODE must be 'live' (the fixture reader is for tests only)")
     if not s.pdf_isolation:
         problems.append("PDF_ISOLATION cannot be disabled")
-    if len((s.demo_access_code or "").strip()) < 8:
-        problems.append("DEMO_ACCESS_CODE must be set (at least 8 characters): the hosted demo is behind a shared code")
+    # The shared access code is optional (the hosted demo is open); a code that is set must not be trivially short.
+    if s.demo_access_code and len(s.demo_access_code.strip()) < 8:
+        problems.append("DEMO_ACCESS_CODE, when set, must be at least 8 characters")
     if not s.llm_api_keys or not s.llm_model.strip():
         problems.append("LLM_MODEL and at least one LLM_API_KEY must be set")
     if "," in s.llm_model:

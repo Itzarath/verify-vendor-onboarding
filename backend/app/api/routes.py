@@ -28,9 +28,10 @@ api = APIRouter(prefix="/api")
 # ---------------------------------------------------------------- health / auth
 @api.get("/health")
 def health(request: HttpRequest, db: Session = Depends(get_db)):
-    if not access.has_access(request):
+    if request.query_params.get("details") != "1" or not access.has_access(request):
         # The platform's health check (every few seconds) and uptime pingers: liveness only. No database query, so
-        # a scale-to-zero database can pause while the demo is idle. Details are behind the access code.
+        # a scale-to-zero database can pause while the demo is idle. Details only when asked for (?details=1), and
+        # behind the access code when one is set.
         return {"ok": True}
     db.execute(select(1))
     from ..pdf.sandbox import SELF_TEST

@@ -25,7 +25,7 @@ _SLOTS = threading.BoundedSemaphore(max(1, get_settings().pdf_max_children))
 OPS = {"inspect", "texts", "render", "prepare", "signatures", "memprobe"}
 TOO_COMPLEX = ("This PDF could not be processed within the safety limits (memory or structure). Please upload a "
                "simpler copy (for example a scan, or a 'print to PDF' version of the document).")
-SELF_TEST: dict = {}  # result of the start-up check, shown in /api/health (behind the access code)
+SELF_TEST: dict = {}  # result of the start-up check, shown in /api/health?details=1
 
 
 def _in_process(op: str, data: bytes, kw: dict):

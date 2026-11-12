@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button, inputCls, SealMark } from "../components/ui";
 import { api } from "../lib/api";
 
-/** Shown before anything else on the hosted demo: one shared access code for evaluators. */
+/** Shown before anything else when the demo is set up with a shared access code. */
 export default function AccessGate({ onGranted }: { onGranted: () => void }) {
   const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);

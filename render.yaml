@@ -16,8 +16,6 @@ services:
         sync: false
       - key: SESSION_SECRET
         generateValue: true
-      - key: DEMO_ACCESS_CODE
-        sync: false
       - key: LLM_MODEL
         value: gemini-3.8-flash
       - key: LLM_TIMEOUT_S

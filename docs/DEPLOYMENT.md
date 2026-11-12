@@ -10,9 +10,9 @@ The demo runs at https://verify-vendor-onboarding.onrender.com. It uses free tie
 
 ## Settings
 
-Secrets are set in the Render dashboard and never stored in the repository. The secrets are `DATABASE_URL`, `DEMO_ACCESS_CODE`, the model keys (`LLM_API_KEY`, `_2`, `_3`) and each backup's `LLM_FALLBACK*_BASE_URL`, `_MODEL` and `_API_KEY`. Render generates `SESSION_SECRET`. Every other setting, with its default, is in [`.env.example`](../.env.example) and `backend/app/config.py`.
+Secrets are set in the Render dashboard and never stored in the repository. The secrets are `DATABASE_URL`, the model keys (`LLM_API_KEY`, `_2`, `_3`) and each backup's `LLM_FALLBACK*_BASE_URL`, `_MODEL` and `_API_KEY`. Render generates `SESSION_SECRET`. Every other setting, with its default, is in [`.env.example`](../.env.example) and `backend/app/config.py`.
 
-`DEMO_ACCESS_CODE` puts the whole API behind one shared code. It protects the model quota from strangers; it is not user authentication. Changing it signs every browser out.
+`DEMO_ACCESS_CODE` is optional and not set on the hosted demo, which is open. When set, it puts the whole site behind one shared code: that protects the model quota from strangers, but it is not user authentication.
 
 ## What happens at start-up
 
@@ -21,7 +21,7 @@ Secrets are set in the Render dashboard and never stored in the repository. The 
 3. **PDF sandbox self-test:** the child process must parse a sample and report whether its memory cap is enforced.
 4. **Re-evaluation of open cases** assessed under older rules. This uses the stored readings, so it makes no model calls.
 
-`/api/health` answers `{"ok": true}` publicly and never touches the database. Behind the access code it also reports the reader, the state of each model key and the sandbox self-test.
+`/api/health` answers `{"ok": true}` and never touches the database, so the platform's frequent checks still let the database pause. `/api/health?details=1` adds the reader, the state of each model key and the sandbox self-test (behind the access code, when one is set).
 
 ## Making the free tier work
 
@@ -34,5 +34,5 @@ Secrets are set in the Render dashboard and never stored in the repository. The 
 ## Verified on the hosted server
 
 - **Linux memory cap:** enforced. A child capped at 200 MB had a 300 MB allocation refused; the real child peaks at about 155 MB.
-- **Access gate:** without the code, API calls are refused and the health check says only "ok".
+- **Access gate (when a code is set):** without the code, API calls are refused and the health check says only "ok".
 - **Flows:** the supplier and reviewer flows, the live run view of all six stages, the duplicate-account review and the manual registry task all work on the hosted site.

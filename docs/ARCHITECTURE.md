@@ -135,7 +135,7 @@ The typical process at a mid-size or large Indian buyer, for a services supplier
 
 ## Known limits
 
-- **Security.** Kept to what a demo needs: persona sign-in behind a shared access code. Not hardened.
+- **Security.** Kept to what a demo needs: persona sign-in with no passwords, and an optional shared access code (off on the hosted demo). Not hardened.
 - **Sources.** No paid GST, PAN, bank-account, MCA or sanctions calls. The adapters are shaped for them, and every simulated result is labelled.
 - **Throughput.** One worker thread on a free instance. A fresh document takes 15–240 seconds to read; the samples are cached.
 - **GST.** One GSTIN per supplier; real suppliers often hold one per state.

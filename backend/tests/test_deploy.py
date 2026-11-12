@@ -41,7 +41,8 @@ def test_the_right_code_opens_it_and_a_changed_code_closes_it(gated, monkeypatch
     assert ok.status_code == 200 and access.ACCESS_COOKIE in ok.cookies
     assert c.get("/api/access").json() == {"required": True, "granted": True}
     assert c.get("/api/auth/personas").status_code == 200
-    details = c.get("/api/health").json()
+    assert c.get("/api/health").json() == {"ok": True}  # details only when asked for
+    details = c.get("/api/health?details=1").json()
     assert "reader" in details and "pdf_sandbox" in details
     monkeypatch.setattr(get_settings(), "demo_access_code", "a-new-code-123")
     assert c.get("/api/auth/personas").json()["error"] == "access_required"
@@ -78,7 +79,8 @@ def _prod(**kw):
 
 def test_production_start_up_checks():
     check_production_settings(_prod())
-    for kw, needle in (({"demo_access_code": None}, "DEMO_ACCESS_CODE"), ({"demo_access_code": "short"}, "DEMO_ACCESS_CODE"),
+    check_production_settings(_prod(demo_access_code=None))  # an open demo, without the shared code, may start
+    for kw, needle in (({"demo_access_code": "short"}, "DEMO_ACCESS_CODE"),
                        ({"llm_api_key": None}, "LLM_API_KEY"), ({"llm_model": ""}, "LLM_MODEL"),
                        ({"llm_model": "gemini-3.8-flash,other-model"}, "one main model"),
                        ({"llm_fallback_model": "other-model"}, "backup LLM_FALLBACK needs"),
@@ -240,8 +242,9 @@ def test_an_oversized_page_is_not_rendered_huge():
     assert time.monotonic() - t < 10
 
 
-def test_public_health_check_does_not_touch_the_database(gated, monkeypatch):
-    # Render's health check runs every few seconds; a database query each time would keep Neon from ever pausing
+def test_public_health_check_does_not_touch_the_database(gated, app_client, monkeypatch):
+    # Render's health check runs every few seconds; a database query each time would keep Neon from ever pausing.
+    # That holds with the shared code and without it (an open demo).
     from sqlalchemy import event
 
     from app.db import get_engine
@@ -251,9 +254,12 @@ def test_public_health_check_does_not_touch_the_database(gated, monkeypatch):
     event.listen(get_engine(), "before_cursor_execute", listener)
     try:
         assert gated().get("/api/health").json() == {"ok": True}
+        monkeypatch.setattr(get_settings(), "demo_access_code", None)
+        assert TestClient(app_client.app).get("/api/health").json() == {"ok": True}
     finally:
         event.remove(get_engine(), "before_cursor_execute", listener)
     assert seen == []
+    assert "reader" in TestClient(app_client.app).get("/api/health?details=1").json()  # open demo: details on request
 
 
 def test_idle_worker_does_not_poll_the_database_every_second():

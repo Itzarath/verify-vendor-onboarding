@@ -29,7 +29,7 @@ export default function App() {
   const [needsCode, setNeedsCode] = useState(false);
   const load = () => {
     setReady(false);
-    // the hosted demo sits behind a shared access code; ask for it before anything else
+    // when the demo is set up with a shared access code (DEMO_ACCESS_CODE), ask for it before anything else
     api<{ required: boolean; granted: boolean }>("/access")
       .then((a) => {
         if (a.required && !a.granted) { setNeedsCode(true); setReady(true); return; }
