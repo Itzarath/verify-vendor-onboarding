@@ -35,17 +35,28 @@ Approval creates the supplier's approved profile and a **vendor master record** 
 
 The supplier form has a **Demo helper** with prepared synthetic applications. Their documents are real PDFs that have already been read, so they run in seconds without calling a model. The same documents and application forms are in [datasets/](datasets/), one folder per fictional vendor.
 
+**Happy path (Nimbus Ledger).** Every check passes. Meridian approves it automatically; at Kestrel a reviewer approves it.
+
+### The four main edge cases
+
+No single-field check catches these. Each needs two or more sources compared, or the application's history.
+
+| Edge case | What the system does |
+|---|---|
+| **Bank account in a trade name.** The account holder is "TEJAS CLEANPRO", not the company's legal name. There are two samples: with and without supporting evidence. | If the GST certificate lists that trade name, a reviewer judges it with the certificate shown as evidence. Without it, the supplier is asked to prove whose account it is. |
+| **A director's personal PAN instead of the company's.** Every ID is valid on its own. | The PAN's 4th letter marks an individual, while the GSTIN and the incorporation certificate carry the company PAN. The supplier is asked for the company PAN and told where it appears. Unfiled GST returns go to finance. |
+| **A correction that also changes the bank account.** Revision 1 is missing the LLP certificate; revision 2 adds it and changes the account. | The certificate clears. The bank change goes to finance, who must confirm it through a contact the buyer already held. The person who confirmed it can't give the final approval. |
+| **A GSTIN registered to another company.** The format, check character and registration status are all valid. | The registry lists a different business for it. The supplier is asked to explain, and a reviewer can reject with a reason. |
+
+### Other samples
+
 | Sample | What it shows |
 |---|---|
-| Happy path (Nimbus Ledger) | Every check passes. Meridian approves it automatically; at Kestrel a reviewer approves it. |
-| Bank account in a trade name, supported by the GST certificate | A reviewer judges it, with the certificate's trade name shown as evidence. |
-| Bank account in a trade name, no support | The supplier is asked to prove the account-holder name. |
-| Director's personal PAN instead of the company's | The supplier is asked for the company PAN; the system points to where it appears. |
-| Missing certificate, then a correction that also changes the bank account | The certificate clears; the bank change goes to finance for an independent confirmation. |
-| GSTIN belongs to a different company | The supplier is asked to explain; a reviewer can reject with a reason. |
-| Scanned documents, MSME claimed without a certificate | Scanned values need confirmation. Meridian requires the MSME proof, Kestrel doesn't. |
+| Scanned documents, MSME claimed without a certificate | Scanned values need a person to confirm them. Meridian requires the MSME proof, Kestrel doesn't. |
 | Scanned cheque with covered account digits | The account can't be confirmed; the supplier is asked for a clearer copy. |
 | Code of conduct declined / left unanswered | Rejected automatically by the policy rule / the supplier is asked to answer. |
+
+Running the happy path twice for the same buyer sends the second application to a duplicate-supplier review. [datasets/invalid-files/](datasets/invalid-files/) has files that are refused at upload.
 
 Sign in from the start page as a supplier, a procurement reviewer or a finance reviewer for one of two fictional buyers:
 - **Meridian Retail India:** approves clean, low-risk applications automatically, and uses a simulated GST registry.
@@ -95,7 +106,7 @@ cd frontend && npm ci && npm run build && cd ..
 cd backend && ../.venv/Scripts/python -m pytest -q
 ```
 
-331 tests run against a real PostgreSQL test database: `vendor_onboarding_test`, or the database in `TEST_DATABASE_URL`, which the tests reset. They make no model calls and no network calls. Pure-logic tests run each sample through compare, checks and routing. API tests drive full submissions, corrections, reviews and approvals, including races between a correction and an approval.
+332 tests run against a real PostgreSQL test database: `vendor_onboarding_test`, or the database in `TEST_DATABASE_URL`, which the tests reset. They make no model calls and no network calls. Pure-logic tests run each sample through compare, checks and routing. API tests drive full submissions, corrections, reviews and approvals, including races between a correction and an approval.
 
 ## Repository layout
 
