@@ -4,6 +4,8 @@ Verify takes a supplier's onboarding application (a form and its PDF documents) 
 
 **Live demo:** https://verify-vendor-onboarding.onrender.com. Open it and pick a role; there is nothing to sign up for. All companies, people and documents in it are fictional.
 
+**Cached readings:** the sample documents on the live site were read by the model in advance, and the model's answers are stored with them, matched to each file by its hash. So the Demo helper's samples run in seconds without calling the model. A document the site has not seen before is read live, which takes about 1–4 minutes on the free model tier.
+
 Scope: Indian private limited companies and LLPs supplying services to a buyer. Other entity types are routed to a reviewer as out of scope, never rejected.
 
 ## What happens to an application
